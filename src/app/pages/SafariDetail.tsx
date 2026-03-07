@@ -1,19 +1,28 @@
-import { useParams, Link } from 'react-router';
+
+import { useParams, Link } from 'react-router-dom';
 import { useState } from 'react';
 import { motion } from 'motion/react';
 import Slider from 'react-slick';
-import { safaris } from '../data/safaris';
+import { loadSafaris } from '../data/loadSafaris';
 import { 
   Clock, DollarSign, MapPin, Calendar, Users, 
   Check, X, Download, MessageCircle, Star, ChevronLeft, ChevronRight 
 } from 'lucide-react';
+import { useEffect } from 'react';
 
 export function SafariDetail() {
   const { id } = useParams();
-  const safari = safaris.find(s => s.id === id);
+   const [safaris, setSafaris] = useState<any[]>([]);
   const [activeTab, setActiveTab] = useState<'itinerary' | 'pricing'>('itinerary');
   const [season, setSeason] = useState<'lowSeason' | 'highSeason'>('lowSeason');
+ 
 
+
+useEffect(() => {
+  loadSafaris().then(setSafaris);
+}, []);
+
+  const safari = safaris.find(s => s.id === id);
   if (!safari) {
     return (
       <div className="min-h-screen flex items-center justify-center">
