@@ -1,33 +1,37 @@
-import { Link } from 'react-router';
-import { HeroSlider } from '../components/HeroSlider';
-import { motion } from 'motion/react';
-import { destinations } from '../data/safaris';
-import { Award, Users, Headphones, MapPin, Star, Quote } from 'lucide-react';
-import { StatsBand } from '../components/StatsBand';
-import  PopularSafaris  from '../components/FeaturedDestination';
+// src/pages/Home.tsx
+import { Link } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
+import { HeroSlider } from '../components/HeroSlider'
+import { motion } from 'motion/react'
+import { loadDestinations } from '../data/loadDestinations'
+import { Award, Users, Headphones, MapPin, Star, Quote } from 'lucide-react'
+import { StatsBand } from '../components/StatsBand'
+import PopularSafaris from '../components/FeaturedDestination'
+
+const allDestinations = loadDestinations()
 
 const features = [
   {
     icon: Users,
     title: 'Experienced Guides',
-    description: 'Professional guides with deep knowledge of East African wildlife and culture'
+    description: 'Professional guides with deep knowledge of East African wildlife and culture',
   },
   {
     icon: Award,
     title: 'Affordable Packages',
-    description: 'Best value safaris tailored to fit your budget without compromising quality'
+    description: 'Best value safaris tailored to fit your budget without compromising quality',
   },
   {
     icon: Headphones,
     title: '24/7 Support',
-    description: 'Round-the-clock assistance before, during, and after your safari'
+    description: 'Round-the-clock assistance before, during, and after your safari',
   },
   {
     icon: MapPin,
     title: 'Custom Tours',
-    description: 'Personalized itineraries designed to match your interests and schedule'
-  }
-];
+    description: 'Personalized itineraries designed to match your interests and schedule',
+  },
+]
 
 const testimonials = [
   {
@@ -35,23 +39,23 @@ const testimonials = [
     location: 'United States',
     text: 'Our Masai Mara safari was absolutely incredible! The guides were knowledgeable, the accommodations were perfect, and we saw all the Big Five. Adventures Connect made our dream safari a reality!',
     rating: 5,
-    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop'
+    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop',
   },
   {
     name: 'Emma Thompson',
     location: 'United Kingdom',
     text: 'The gorilla trekking in Rwanda was a once-in-a-lifetime experience. The entire trip was flawlessly organized, and the team went above and beyond to ensure we had an amazing time.',
     rating: 5,
-    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop'
+    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop',
   },
   {
     name: 'Hans Weber',
     location: 'Germany',
     text: 'Professional, friendly, and reliable. Our Tanzania safari exceeded all expectations. The Serengeti is even more spectacular in person, and the Ngorongoro Crater was breathtaking!',
     rating: 5,
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop'
-  }
-];
+    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop',
+  },
+]
 
 export function Home() {
   return (
@@ -59,7 +63,7 @@ export function Home() {
       {/* Hero Slider */}
       <HeroSlider />
 
-      {/* Featured Destinations Section */}
+      {/* Featured Destinations */}
       <section className="py-20 px-4 bg-[var(--safari-cream)]">
         <div className="max-w-7xl mx-auto">
           <motion.div
@@ -78,7 +82,7 @@ export function Home() {
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {destinations.map((destination, index) => (
+            {allDestinations.map((destination, index) => (
               <motion.div
                 key={destination.id}
                 initial={{ opacity: 0, y: 30 }}
@@ -94,17 +98,17 @@ export function Home() {
                     <img
                       src={destination.image}
                       alt={destination.name}
+                      loading="lazy"
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
-                    
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
                     <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                       <div className="text-4xl mb-2">{destination.flag}</div>
                       <h3 className="text-2xl font-bold mb-2">{destination.name}</h3>
-                      <p className="text-sm text-gray-200 mb-4">{destination.description}</p>
-                      <button className="bg-gradient-to-r from-[var(--safari-gold)] to-[var(--safari-orange)] text-white px-6 py-2 rounded-full group-hover:shadow-lg transition-all duration-300">
+                      <p className="text-sm text-gray-200 mb-4 line-clamp-2">{destination.description}</p>
+                      <span className="inline-block bg-gradient-to-r from-[var(--safari-gold)] to-[var(--safari-orange)] text-white px-6 py-2 rounded-full group-hover:shadow-lg transition-all duration-300 text-sm font-semibold">
                         View Tours
-                      </button>
+                      </span>
                     </div>
                   </div>
                 </Link>
@@ -114,7 +118,7 @@ export function Home() {
         </div>
       </section>
 
-      {/* Why Choose Us Section */}
+      {/* Why Choose Us */}
       <section className="py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <motion.div
@@ -145,27 +149,23 @@ export function Home() {
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-[var(--safari-gold)] to-[var(--safari-orange)] rounded-full mb-4">
                   <feature.icon className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-[var(--safari-brown-dark)] mb-2">
-                  {feature.title}
-                </h3>
-                <p className="text-gray-600">
-                  {feature.description}
-                </p>
+                <h3 className="text-xl font-bold text-[var(--safari-brown-dark)] mb-2">{feature.title}</h3>
+                <p className="text-gray-600">{feature.description}</p>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-     
       <section>
-        <PopularSafaris/>
-      </section>
-       <section>
-        <StatsBand/>
+        <PopularSafaris />
       </section>
 
-      {/* Testimonials Section */}
+      <section>
+        <StatsBand />
+      </section>
+
+      {/* Testimonials */}
       <section className="py-20 px-4 bg-[var(--safari-brown-dark)] text-white">
         <div className="max-w-7xl mx-auto">
           <motion.div
@@ -175,9 +175,7 @@ export function Home() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              What Our Travelers Say
-            </h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">What Our Travelers Say</h2>
             <p className="text-lg text-gray-300 max-w-2xl mx-auto">
               Read reviews from our satisfied clients who experienced the adventure of a lifetime
             </p>
@@ -194,9 +192,7 @@ export function Home() {
                 className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10"
               >
                 <Quote className="w-10 h-10 text-[var(--safari-gold)] mb-4" />
-                <p className="text-gray-200 mb-6 italic">
-                  "{testimonial.text}"
-                </p>
+                <p className="text-gray-200 mb-6 italic">"{testimonial.text}"</p>
                 <div className="flex items-center gap-4">
                   <img
                     src={testimonial.image}
@@ -219,7 +215,7 @@ export function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* CTA */}
       <section className="py-20 px-4 bg-gradient-to-r from-[var(--safari-gold)] to-[var(--safari-orange)] text-white">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div
@@ -252,5 +248,5 @@ export function Home() {
         </div>
       </section>
     </div>
-  );
+  )
 }

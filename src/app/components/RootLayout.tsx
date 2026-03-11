@@ -1,4 +1,5 @@
-import { Outlet } from 'react-router';
+import { Outlet } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import { TopBar } from '../components/TopBar';
 import { Navigation } from '../components/Navigation';
 import { Footer } from '../components/Footer';

@@ -1,0 +1,15 @@
+{
+  "id": "kenya",
+  "name": "Kenya",
+  "country": "Kenya",
+  "flag": "🇰🇪",
+  "image": "/images/destinations/kenya.jpg",
+  "description": "The birthplace of the safari, Kenya offers extraordinary wildlife, dramatic landscapes and vibrant Maasai culture.",
+  "highlights": [
+    "Maasai Mara",
+    "Amboseli",
+    "Tsavo",
+    "Diani Beach",
+    "Lake Nakuru"
+  ]
+}

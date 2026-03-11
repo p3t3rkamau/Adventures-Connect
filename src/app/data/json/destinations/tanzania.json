@@ -1,0 +1,15 @@
+{
+  "id": "tanzania",
+  "name": "Tanzania",
+  "country": "Tanzania",
+  "flag": "🇹🇿",
+  "image": "/images/destinations/tanzania.jpg",
+  "description": "Home to the Serengeti, Ngorongoro Crater and Zanzibar's spice-scented beaches — Tanzania is Africa at its most iconic.",
+  "highlights": [
+    "Serengeti",
+    "Ngorongoro Crater",
+    "Zanzibar",
+    "Tarangire",
+    "Mount Kilimanjaro"
+  ]
+}

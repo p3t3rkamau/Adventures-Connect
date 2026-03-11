@@ -1,4 +1,4 @@
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Facebook, Instagram, Send } from 'lucide-react';
 import { logo }  from '../assets/img/exports';
 export function Footer() {

@@ -1,12 +1,22 @@
-import { useParams, Link } from 'react-router';
-import { motion } from 'motion/react';
-import { destinations, safaris } from '../data/safaris';
-import { Clock, DollarSign, ArrowRight } from 'lucide-react';
+// src/pages/DestinationDetail.tsx
+import { Link } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
+import { motion } from 'motion/react'
+import { getDestinationById } from '../data/loadDestinations'
+import { loadSafaris } from '../data/loadSafaris'
+import { Clock, DollarSign, ArrowRight } from 'lucide-react'
+
+// Loaded once synchronously
+const allSafaris = loadSafaris()
 
 export function DestinationDetail() {
-  const { country } = useParams();
-  const destination = destinations.find(d => d.id === country);
-  const countrySafaris = safaris.filter(s => s.country === country);
+  const { country } = useParams<{ country: string }>()
+  const destination = country ? getDestinationById(country) : undefined
+
+  // Match safaris by country name (case-insensitive) so "Kenya" matches "kenya" etc.
+  const countrySafaris = allSafaris.filter(
+    s => s.country.toLowerCase() === country?.toLowerCase()
+  )
 
   if (!destination) {
     return (
@@ -18,20 +28,20 @@ export function DestinationDetail() {
           </Link>
         </div>
       </div>
-    );
+    )
   }
 
   return (
     <div>
-      {/* Hero Section */}
+      {/* Hero */}
       <div className="relative h-[400px] md:h-[500px]">
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${destination.image})` }}
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent" />
         </div>
-        
+
         <div className="relative h-full flex items-center">
           <div className="max-w-7xl mx-auto px-4 w-full">
             <motion.div
@@ -44,15 +54,13 @@ export function DestinationDetail() {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
                 {destination.name}
               </h1>
-              <p className="text-xl md:text-2xl text-gray-200">
-                {destination.description}
-              </p>
+              <p className="text-xl md:text-2xl text-gray-200">{destination.description}</p>
             </motion.div>
           </div>
         </div>
       </div>
 
-      {/* Safari Packages Section */}
+      {/* Safari packages */}
       <section className="py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <motion.div
@@ -70,84 +78,90 @@ export function DestinationDetail() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {countrySafaris.map((safari, index) => (
-              <motion.div
-                key={safari.id}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-              >
-                <Link
-                  to={`/safari/${safari.id}`}
-                  className="group block bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
-                >
-                  <div className="aspect-[4/3] relative overflow-hidden">
-                    <img
-                      src={safari.image}
-                      alt={safari.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                    />
-                    <div className="absolute top-4 right-4">
-                      <span className="bg-[var(--safari-gold)] text-white px-3 py-1 rounded-full text-sm font-semibold">
-                        {safari.category}
-                      </span>
-                    </div>
-                  </div>
-                  
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold text-[var(--safari-brown-dark)] mb-2 group-hover:text-[var(--safari-gold)] transition-colors">
-                      {safari.title}
-                    </h3>
-                    <p className="text-gray-600 mb-4 line-clamp-2">
-                      {safari.description}
-                    </p>
-                    
-                    <div className="flex items-center justify-between mb-4">
-                      <div className="flex items-center gap-2 text-gray-600">
-                        <Clock className="w-4 h-4" />
-                        <span className="text-sm">{safari.duration}</span>
-                      </div>
-                      <div className="flex items-center gap-2 text-[var(--safari-gold)]">
-                        <DollarSign className="w-4 h-4" />
-                        <span className="font-bold">From ${safari.price}</span>
-                      </div>
-                    </div>
-
-                    <div className="mb-4">
-                      <div className="text-sm text-gray-600 mb-2">Highlights:</div>
-                      <div className="flex flex-wrap gap-2">
-                        {safari.highlights.slice(0, 3).map((highlight, i) => (
-                          <span key={i} className="text-xs bg-[var(--safari-cream)] text-gray-700 px-2 py-1 rounded">
-                            {highlight}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-
-                    <div className="flex items-center justify-between text-[var(--safari-gold)] group-hover:text-[var(--safari-orange)] transition-colors">
-                      <span className="font-semibold">View Details</span>
-                      <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
-                    </div>
-                  </div>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
-
-          {countrySafaris.length === 0 && (
+          {countrySafaris.length === 0 ? (
             <div className="text-center py-12">
               <p className="text-gray-600 mb-4">No safaris available for this destination yet.</p>
-              <Link to="/contact" className="text-[var(--safari-gold)] hover:underline">
+              <Link to="/contact" className="text-[var(--safari-gold)] hover:underline font-semibold">
                 Contact us for custom packages
               </Link>
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {countrySafaris.map((safari, index) => (
+                <motion.div
+                  key={safari.id}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: Math.min(index * 0.1, 0.3) }}
+                >
+                  <Link
+                    to={`/safari/${safari.id}`}
+                    className="group block bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-full"
+                  >
+                    <div className="aspect-[4/3] relative overflow-hidden">
+                      <img
+                        src={safari.image}
+                        alt={safari.title}
+                        loading="lazy"
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
+                      <div className="absolute top-4 right-4">
+                        <span className="bg-[var(--safari-gold)] text-white px-3 py-1 rounded-full text-sm font-semibold capitalize">
+                          {safari.category}
+                        </span>
+                      </div>
+                    </div>
+
+                    <div className="p-6">
+                      <h3 className="text-xl font-bold text-[var(--safari-brown-dark)] mb-2 group-hover:text-[var(--safari-gold)] transition-colors">
+                        {safari.title}
+                      </h3>
+                      <p className="text-gray-600 mb-4 line-clamp-2 text-sm">{safari.description}</p>
+
+                      <div className="flex items-center justify-between mb-4 pb-4 border-b border-gray-100">
+                        <div className="flex items-center gap-2 text-gray-600">
+                          <Clock className="w-4 h-4" />
+                          <span className="text-sm">{safari.duration}</span>
+                        </div>
+                        <div className="flex items-center gap-1 text-[var(--safari-gold)] font-bold text-sm">
+                          <DollarSign className="w-4 h-4" />
+                          <span>From ${safari.price.toLocaleString()}</span>
+                        </div>
+                      </div>
+
+                      {safari.highlights.length > 0 && (
+                        <div className="mb-4">
+                          <div className="text-xs text-gray-500 mb-2 font-semibold uppercase tracking-wide">
+                            Highlights
+                          </div>
+                          <div className="flex flex-wrap gap-2">
+                            {safari.highlights.slice(0, 3).map((highlight, i) => (
+                              <span
+                                key={i}
+                                className="text-xs bg-[var(--safari-cream)] text-gray-700 px-2 py-1 rounded"
+                              >
+                                {highlight}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+
+                      <div className="flex items-center justify-between text-[var(--safari-gold)] group-hover:text-[var(--safari-orange)] transition-colors">
+                        <span className="font-semibold text-sm">View Details</span>
+                        <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
+                      </div>
+                    </div>
+                  </Link>
+                </motion.div>
+              ))}
             </div>
           )}
         </div>
       </section>
 
-      {/* Highlights Section */}
+      {/* Top attractions */}
       <section className="py-20 px-4 bg-[var(--safari-cream)]">
         <div className="max-w-7xl mx-auto">
           <motion.div
@@ -161,18 +175,24 @@ export function DestinationDetail() {
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {destination.highlights.map((highlight, index) => (
-                <div
+                <motion.div
                   key={index}
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: index * 0.08 }}
                   className="bg-white p-6 rounded-xl text-center shadow-md hover:shadow-lg transition-shadow"
                 >
                   <div className="text-3xl mb-2">🦁</div>
-                  <div className="font-semibold text-[var(--safari-brown-dark)]">{highlight}</div>
-                </div>
+                  <div className="font-semibold text-[var(--safari-brown-dark)] text-sm">
+                    {highlight}
+                  </div>
+                </motion.div>
               ))}
             </div>
           </motion.div>
         </div>
       </section>
     </div>
-  );
+  )
 }
