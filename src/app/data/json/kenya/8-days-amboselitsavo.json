@@ -1,0 +1,75 @@
+{
+  "id": "5-days-tsavo-amboseli",
+  "title": "5 Days Tsavo West & Amboseli Safari",
+  "country": "Kenya",
+  "duration": "5 Days / 4 Nights",
+  "price": 1590,
+  "description": "A short and exciting safari covering Tsavo West and Amboseli National Park, offering diverse landscapes, wildlife encounters, and views of Mount Kilimanjaro.",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKgET7VMUvli6e3xIllJS6-T98JdoVKsEXFw&s",
+  "category": "midrange",
+  "experience": "wildlife",
+  "highlights": [
+    "Tsavo West – Scenic landscapes and wildlife",
+    "Amboseli – Elephants and Kilimanjaro views",
+    "Short and budget-friendly safari",
+    "Ideal for quick getaways"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Nairobi to Tsavo West",
+      "description": "Transfer to Tsavo West and check in at Kilaguni Serena Lodge."
+    },
+    {
+      "day": 2,
+      "title": "Full Day Tsavo West",
+      "description": "Game drives in Tsavo West exploring wildlife and landscapes."
+    },
+    {
+      "day": 3,
+      "title": "Tsavo to Amboseli",
+      "description": "Transfer to Amboseli Serena Safari Lodge."
+    },
+    {
+      "day": 4,
+      "title": "Full Day Amboseli",
+      "description": "Game drives with views of Mount Kilimanjaro and elephants."
+    },
+    {
+      "day": 5,
+      "title": "Departure",
+      "description": "Return journey and end of safari."
+    }
+  ],
+  "included": [
+    "Accommodation on full board basis",
+    "Transport in safari vehicle",
+    "Professional driver guide",
+    "Park entrance fees",
+    "Game drives"
+  ],
+  "notIncluded": [
+    "Tips",
+    "Personal expenses",
+    "Travel insurance",
+    "Optional activities"
+  ],
+  "pricing": {
+    "lowSeason": 1480,
+    "highSeason": 1590,
+    "shoulderSeason": 1540
+  },
+  "accommodation": [
+    "Kilaguni Serena Lodge – Tsavo West (2 nights)",
+    "Amboseli Serena Safari Lodge (2 nights)"
+  ],
+  "gallery": [
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1yW2F2BR89TB65-tF5X2e_w3N3JVrL9QFfg&s",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTIAxfkFiyHNqmbYTFqozLyy_Z6XVgVbU8uQ&s"
+  ],
+  "travelInfo": {
+    "clothes": "Light clothing, sunscreen, hat, and a jacket for mornings.",
+    "food": "Full board meals at safari lodges."
+  },
+  "note": "Rates based on 2 pax travelling together."
+}

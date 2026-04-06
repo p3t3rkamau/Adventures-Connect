@@ -1,0 +1,94 @@
+{
+  "id": "8-days-amboseli-tsavo-malindi",
+  "title": "8 Days Amboseli, Tsavo & Malindi Beach Safari",
+  "country": "Kenya",
+  "duration": "8 Days / 7 Nights",
+  "price": 2450,
+  "description": "A well-balanced safari combining Amboseli’s elephant herds, Tsavo’s rugged wilderness, and a relaxing coastal escape in Malindi. Ideal for travelers looking for both wildlife adventure and beach relaxation.",
+  "image": "https://kilidovetours.com/wp-content/uploads/2023/09/Alone-Maasai-Warrior-at-Amboseli-National-Park-1024x683.webp",
+  "category": "luxury",
+  "experience": "wildlife & beach",
+  "highlights": [
+    "Amboseli National Park – Views of Mount Kilimanjaro & elephants",
+    "Tsavo West – Volcanic landscapes & Mzima Springs",
+    "Tsavo East – Red elephants & vast wilderness",
+    "Malindi Beach – Relaxation and coastal experience"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Arrival to Amboseli",
+      "description": "Arrival and transfer to Amboseli Serena Safari Lodge. Afternoon at leisure or optional game drive."
+    },
+    {
+      "day": 2,
+      "title": "Full Day Amboseli",
+      "description": "Morning and afternoon game drives in Amboseli National Park with views of Mount Kilimanjaro."
+    },
+    {
+      "day": 3,
+      "title": "Amboseli to Tsavo West",
+      "description": "Transfer to Tsavo West and check in at Kilaguni Serena Lodge. Afternoon exploration."
+    },
+    {
+      "day": 4,
+      "title": "Tsavo East",
+      "description": "Transfer to Tsavo East and stay at Kudu Camp. Game drive in the park."
+    },
+    {
+      "day": 5,
+      "title": "Tsavo to Malindi",
+      "description": "Transfer to Malindi for beach stay."
+    },
+    {
+      "day": 6,
+      "title": "Malindi Beach",
+      "description": "Relaxation at beach resort with optional water activities."
+    },
+    {
+      "day": 7,
+      "title": "Malindi Beach",
+      "description": "Leisure stay at the beach."
+    },
+    {
+      "day": 8,
+      "title": "Departure",
+      "description": "End of safari and departure."
+    }
+  ],
+  "included": [
+    "Accommodation on full board during safari",
+    "Transport in safari vehicle",
+    "Professional driver guide",
+    "Park entrance fees",
+    "Game drives",
+    "Beach accommodation"
+  ],
+  "notIncluded": [
+    "Tips",
+    "Personal expenses",
+    "Travel insurance",
+    "Optional excursions"
+  ],
+  "pricing": {
+    "lowSeason": 2145,
+    "highSeason": 2450,
+    "shoulderSeason": 2310
+  },
+  "accommodation": [
+    "Amboseli Serena Safari Lodge (2 nights)",
+    "Kilaguni Serena Lodge – Tsavo West (1 night)",
+    "Kudu Camp – Tsavo East (1 night)",
+    "Exploreans Malindi / Diamond Beach Resort (3 nights)"
+  ],
+  "gallery": [
+    "https://www.andbeyond.com/wp-content/uploads/sites/5/elephant-bull-front-of-kilimanjaro-amboseli.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPuN5oS_8Moht16nRP6xsP3giNc272xDdTYg&s",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKgET7VMUvli6e3xIllJS6-T98JdoVKsEXFw&s"
+  ],
+  "travelInfo": {
+    "clothes": "Light safari clothing, hat, sunscreen, and a light jacket for early mornings.",
+    "food": "Full board meals during safari and resort dining at the beach hotel."
+  },
+  "note": "Rates are indicative and may vary depending on season and availability."
+}
