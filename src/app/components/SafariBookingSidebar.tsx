@@ -116,11 +116,11 @@ export function SafariBookingSidebar({ safari }: Props) {
           Our safari experts are here to help you plan the perfect adventure.
         </p>
         <div className="space-y-2 text-sm">
-          <a href="tel:+254714018914" className="block text-[var(--safari-gold)] hover:underline">
-            📞 +254 714 018 914
+          <a href="tel:+254721949410" className="block text-[var(--safari-gold)] hover:underline">
+            📞 +254 721 949 410
           </a>
           <a href="mailto:info@adventuresconnect.com" className="block text-[var(--safari-gold)] hover:underline">
-            ✉️ info@adventuresconnect.com
+            ✉️ info@adventuresconnect.co.ke
           </a>
         </div>
       </div>

@@ -36,16 +36,10 @@ const features = [
 
 const team = [
   {
-    name: 'Kith Allen Mworia',
+    name: 'Keith Allen Mworia',
     role: 'Founder & Lead Guide',
     image: '',
     bio: '15+ years of safari experience across East Africa'
-  },
-  {
-    name: 'Juliet Mueni',
-    role: 'Safari Planner',
-    image: '',
-    bio: 'Expert in safari logistics and customer satisfaction'
   },
  
 ];

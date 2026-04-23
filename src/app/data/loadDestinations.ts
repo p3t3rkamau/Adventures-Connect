@@ -1,3 +1,5 @@
+/// <reference types="vite/client" />
+
 // src/data/loadDestinations.ts
 //
 // Auto-discovers all destination JSON files from:

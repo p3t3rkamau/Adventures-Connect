@@ -10,6 +10,33 @@ import PopularSafaris from '../components/FeaturedDestination'
 
 const allDestinations = loadDestinations()
 
+const faqs = [
+  {
+    question: 'What is the best time to visit for a safari?',
+    answer: 'The best time depends on your destination and interests. For the Great Migration in Kenya and Tanzania, July to October is ideal. For gorilla trekking in Rwanda and Uganda, the dry seasons (June-September and December-February) are recommended. However, safaris are available year-round, each season offering unique experiences.'
+  },
+  {
+    question: 'Do I need a visa to visit East Africa?',
+    answer: 'Most visitors require a visa to enter Kenya, Tanzania, Rwanda, and Uganda. Many nationalities can obtain an e-visa online before travel or a visa on arrival. We recommend checking with the respective embassy or consulate for your specific country\'s requirements. We can provide guidance on visa applications.'
+  },
+  {
+    question: 'What vaccinations do I need?',
+    answer: 'Yellow fever vaccination is mandatory for most East African countries. Other recommended vaccinations include Hepatitis A and B, Typhoid, and Tetanus. Malaria prophylaxis is also recommended for most safari destinations. Please consult your doctor or travel clinic at least 6 weeks before your trip.'
+  },
+  {
+    question: 'What should I pack for a safari?',
+    answer: 'Pack lightweight, neutral-colored clothing (khaki, beige, olive), a hat, sunglasses, sunscreen, insect repellent, comfortable walking shoes, and a light jacket for early morning game drives. Don\'t forget your camera with extra batteries and memory cards! We\'ll send you a detailed packing list upon booking.'
+  },
+  {
+    question: 'Are safaris safe?',
+    answer: 'Yes, safaris are very safe when conducted by experienced guides and reputable operators like us. All our guides are trained professionals who prioritize your safety. We use well-maintained 4x4 vehicles and follow strict safety protocols during wildlife viewing.'
+  },
+  {
+    question: 'What is your cancellation policy?',
+    answer: 'Cancellations made 60+ days before departure receive a full refund minus a 10% administrative fee. Cancellations 30-59 days before receive a 50% refund. Cancellations less than 30 days before departure are non-refundable. We strongly recommend purchasing travel insurance to protect your investment.'
+  }
+];
+
 const features = [
   {
     icon: Users,
@@ -158,7 +185,52 @@ export function Home() {
       </section>
 
       <section>
-        <PopularSafaris />
+              {/* FAQ Section */}
+              <section className="py-20 px-4 bg-[var(--safari-cream)]">
+                <div className="max-w-4xl mx-auto">
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                    className="text-center mb-12"
+                  >
+                    <h2 className="text-3xl md:text-4xl font-bold text-[var(--safari-brown-dark)] mb-4">
+                      Frequently Asked Questions
+                    </h2>
+                    <p className="text-lg text-gray-600">
+                      Find answers to common questions about safari travel
+                    </p>
+                  </motion.div>
+        
+                  <Accordion.Root type="single" collapsible className="space-y-4">
+                    {faqs.map((faq, index) => (
+                      <motion.div
+                        key={index}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.4, delay: index * 0.1 }}
+                      >
+                        <Accordion.Item
+                          value={`item-${index}`}
+                          className="bg-white rounded-lg overflow-hidden shadow-md"
+                        >
+                          <Accordion.Header>
+                            <Accordion.Trigger className="w-full px-6 py-4 text-left font-semibold text-[var(--safari-brown-dark)] hover:bg-gray-50 transition-colors flex items-center justify-between group">
+                              <span>{faq.question}</span>
+                              <ChevronDown className="w-5 h-5 text-[var(--safari-gold)] transition-transform group-data-[state=open]:rotate-180" />
+                            </Accordion.Trigger>
+                          </Accordion.Header>
+                          <Accordion.Content className="px-6 py-4 text-gray-600 data-[state=open]:animate-slideDown data-[state=closed]:animate-slideUp">
+                            {faq.answer}
+                          </Accordion.Content>
+                        </Accordion.Item>
+                      </motion.div>
+                    ))}
+                  </Accordion.Root>
+                </div>
+              </section>
       </section>
 
       <section>

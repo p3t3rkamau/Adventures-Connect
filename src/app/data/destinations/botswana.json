@@ -1,0 +1,30 @@
+{
+  "id": "botswana",
+  "name": "Botswana",
+  "country": "Botswana",
+  "flag": "🇧🇼",
+  "image": "https://www.andbeyond.com/wp-content/uploads/sites/5/okavango-delta-botswana-aerial-view.jpg",
+  "description": "Botswana is a premier safari destination known for its unspoiled wilderness, abundant wildlife, and unique ecosystems like the Okavango Delta.",
+  "highlights": [
+    {
+      "name": "Okavango Delta",
+      "type": "wildlife"
+    },
+    {
+      "name": "Chobe National Park",
+      "type": "wildlife"
+    },
+    {
+      "name": "Makgadikgadi Pans",
+      "type": "landmark"
+    },
+    {
+      "name": "Moremi Game Reserve",
+      "type": "wildlife"
+    },
+    {
+      "name": "Gaborone",
+      "type": "city"
+    }
+  ]
+}
