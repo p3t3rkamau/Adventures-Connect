@@ -3,19 +3,93 @@
   "title": "Best of Kenya Safari – North and South Edition",
   "country": "Kenya",
   "duration": "15 Days / 14 Nights",
-  "price": 6230,
+  "price": 4800,
   "description": "This extensive safari explores northern and southern Kenya, from Ol Pejeta and Samburu to the Aberdares, Lake Naivasha, Maasai Mara, Amboseli, and finally the Kenyan coast. Guests experience iconic wildlife, cultural visits, and optional excursions, including the Great Wildebeest Migration between July and October.",
   "image": "https://jewelsafaris.com/wp-content/uploads/2019/09/Ol-Pejeta-Chimpanzee-Sanctuary-1.jpg",
   "category": "luxury",
   "experience": "wildlife",
   "highlights": [
     "Chimpanzee sanctuary and Big Five at Ol Pejeta Conservancy",
-    "Rare species sightings in Samburu including Grevy’s zebra and Beisa oryx",
+    "Rare species sightings in Samburu including Grevy's zebra and Beisa oryx",
     "Aberdares wildlife viewing at The Ark Lodge",
     "Boat ride and birdlife at Lake Naivasha",
     "Game drives in Maasai Mara with opportunity to witness the Great Wildebeest Migration",
     "Amboseli National Park with elephant herds and views of Mount Kilimanjaro",
     "Mombasa beach stay with optional activities such as Fort Jesus tour, dolphin swimming, and Chale Island visit"
+  ],
+  "pricingPeriods": [
+    {
+      "id": "jan-mar",
+      "label": "5 Jan – 31 Mar",
+      "startDate": "2026-01-05",
+      "endDate": "2026-03-31",
+      "pricePerPersonSharing": 4800,
+      "currency": "USD",
+      "minPersons": 2
+    },
+    {
+      "id": "apr-may",
+      "label": "1 Apr – 31 May",
+      "startDate": "2026-04-01",
+      "endDate": "2026-05-31",
+      "pricePerPersonSharing": 5200,
+      "currency": "USD",
+      "minPersons": 2
+    },
+    {
+      "id": "easter",
+      "label": "Easter",
+      "startDate": "2026-04-02",
+      "endDate": "2026-04-06",
+      "pricePerPersonSharing": 5470,
+      "currency": "USD",
+      "minPersons": 2
+    },
+    {
+      "id": "june",
+      "label": "June",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-30",
+      "pricePerPersonSharing": 5400,
+      "currency": "USD",
+      "minPersons": 2
+    },
+    {
+      "id": "jul-sep",
+      "label": "1 Jul – 30 Sep",
+      "startDate": "2026-07-01",
+      "endDate": "2026-09-30",
+      "pricePerPersonSharing": 6230,
+      "currency": "USD",
+      "minPersons": 2
+    },
+    {
+      "id": "october",
+      "label": "October",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31",
+      "pricePerPersonSharing": 5700,
+      "currency": "USD",
+      "minPersons": 2
+    },
+    {
+      "id": "nov-dec",
+      "label": "1 Nov – 21 Dec",
+      "startDate": "2026-11-01",
+      "endDate": "2026-12-21",
+      "pricePerPersonSharing": 5100,
+      "currency": "USD",
+      "minPersons": 2
+    },
+    {
+      "id": "christmas",
+      "label": "22 Dec – 5 Jan 2027",
+      "startDate": "2026-12-22",
+      "endDate": "2027-01-05",
+      "pricePerPersonSharing": 5900,
+      "currency": "USD",
+      "minPersons": 2
+    }
   ],
   "itinerary": [
     {
@@ -36,7 +110,7 @@
     {
       "day": 4,
       "title": "Full Day in Samburu",
-      "description": "Morning and afternoon game drives. Spot Grevy’s zebra, Beisa oryx, and other wildlife. Optional Samburu village visit."
+      "description": "Morning and afternoon game drives. Spot Grevy's zebra, Beisa oryx, and other wildlife. Optional Samburu village visit."
     },
     {
       "day": 5,
@@ -98,11 +172,11 @@
     "Accommodation on full board in safari lodges, half board at Swahili Beach resort, bed & breakfast at Tamarind Tree Hotel",
     "Exclusive use of safari-equipped Landcruiser (not shared)",
     "Unlimited game drives while on safari",
-    "Services of a English-speaking professional driver guide and pre-tour briefing",
+    "Services of an English-speaking professional driver guide and pre-tour briefing",
     "All park entrance fees and relevant taxes",
     "First-class train ticket (SGR)",
     "Return transfers in Mombasa and Diani",
-    "Excursions into wasiai ilands and Chale Island",
+    "Excursions to Wasini and Chale Islands",
     "One-way air ticket Mombasa to Nairobi (SafariLink)"
   ],
   "notIncluded": [
@@ -111,18 +185,6 @@
     "Personal expenses (laundry, phone calls, extra meals/drinks)",
     "Optional activities not mentioned"
   ],
-  "pricing": {
-    "lowSeason": {
-      "solo": 5470,
-      "twoPersons": 6230,
-      "group": 5790
-    },
-    "highSeason": {
-      "solo": 5470,
-      "twoPersons": 6230,
-      "group": 5790
-    }
-  },
   "accommodation": [
     "Tamarind Tree Hotel – Nairobi (1 night)",
     "Serena Sweetwaters Tented Camp – Ol Pejeta (1 night)",
@@ -130,9 +192,9 @@
     "The Ark Lodge – Aberdares (1 night)",
     "Lake Naivasha Sopa Lodge – Lake Naivasha (1 night)",
     "Ol Kinyei Mara Camp – Maasai Mara (2 nights)",
-    "Amboseli Serena Lodge – Amboseli (1 nights)",
-    "Kilangani serena (1 nights)",
-    "Swahili Beach resort – Mombasa (3 nights)"
+    "Amboseli Serena Lodge – Amboseli (1 night)",
+    "Kilaguni Serena Lodge – Tsavo West (1 night)",
+    "Swahili Beach Resort – Mombasa (3 nights)"
   ],
   "gallery": [
     "/images/safaris/tamarind-tree.jpg",

@@ -3,17 +3,91 @@
   "title": "Best of Kenya Safari – North and South Edition",
   "country": "Kenya",
   "duration": "13 Days / 12 Nights",
-  "price": 5695,
+  "price": 4400,
   "description": "A luxury Kenya safari combining northern wildlife at Samburu, Ol Pejeta, central parks, Maasai Mara, and the relaxing beaches of Diani. Ideal for travelers wanting both thrill and chill.",
   "image": "https://www.kenyawildlifetours.com/wp-content/uploads/2023/10/white-rhino-translocation.jpg",
   "category": "luxury",
   "experience": "wildlife & beach",
   "highlights": [
-    "Samburu National Reserve – Grevy’s Zebra & Beisa Oryx",
+    "Samburu National Reserve – Grevy's Zebra & Beisa Oryx",
     "Ol Pejeta Conservancy – Big Five and Northern White Rhinos",
     "Lake Nakuru – Flamingoes, Rhinos & Rothschild Giraffe",
     "Maasai Mara – Big Five & Great Migration (Jul–Oct)",
     "Diani Beach – Chale Island & Wasini Island excursions"
+  ],
+  "pricingPeriods": [
+    {
+      "id": "jan-mar",
+      "label": "5 Jan – 31 Mar",
+      "startDate": "2026-01-05",
+      "endDate": "2026-03-31",
+      "pricePerPersonSharing": 4400,
+      "currency": "USD",
+      "minPersons": 2
+    },
+    {
+      "id": "apr-may",
+      "label": "1 Apr – 31 May",
+      "startDate": "2026-04-01",
+      "endDate": "2026-05-31",
+      "pricePerPersonSharing": 4700,
+      "currency": "USD",
+      "minPersons": 2
+    },
+    {
+      "id": "easter",
+      "label": "Easter",
+      "startDate": "2026-04-02",
+      "endDate": "2026-04-06",
+      "pricePerPersonSharing": 4950,
+      "currency": "USD",
+      "minPersons": 2
+    },
+    {
+      "id": "june",
+      "label": "June",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-30",
+      "pricePerPersonSharing": 4900,
+      "currency": "USD",
+      "minPersons": 2
+    },
+    {
+      "id": "jul-sep",
+      "label": "1 Jul – 30 Sep",
+      "startDate": "2026-07-01",
+      "endDate": "2026-09-30",
+      "pricePerPersonSharing": 5695,
+      "currency": "USD",
+      "minPersons": 2
+    },
+    {
+      "id": "october",
+      "label": "October",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31",
+      "pricePerPersonSharing": 5200,
+      "currency": "USD",
+      "minPersons": 2
+    },
+    {
+      "id": "nov-dec",
+      "label": "1 Nov – 21 Dec",
+      "startDate": "2026-11-01",
+      "endDate": "2026-12-21",
+      "pricePerPersonSharing": 4600,
+      "currency": "USD",
+      "minPersons": 2
+    },
+    {
+      "id": "christmas",
+      "label": "22 Dec – 5 Jan 2027",
+      "startDate": "2026-12-22",
+      "endDate": "2027-01-05",
+      "pricePerPersonSharing": 5400,
+      "currency": "USD",
+      "minPersons": 2
+    }
   ],
   "itinerary": [
     {
@@ -96,11 +170,6 @@
     "Personal expenses (travel insurance, laundry, phone calls, meals/drinks not indicated)",
     "Optional activities not mentioned"
   ],
-  "pricing": {
-    "greenSeason": 4950,
-    "peakSeason": 5695,
-    "shoulderSeason": 4950
-  },
   "accommodation": [
     "Ashnil Samburu Camp (2 nights)",
     "Serena Sweetwaters Tented Camp (2 nights)",

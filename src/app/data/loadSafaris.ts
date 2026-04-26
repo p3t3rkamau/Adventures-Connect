@@ -10,15 +10,8 @@ const safariModules = import.meta.glob('./json/**/*.json', {
   eager: true
 }) as Record<string, { default?: Safari }>
 
-/**
- * Internal cached safari list
- */
 const safaris: Safari[] = []
 
-/**
- * Load safaris safely.
- * If a file is corrupt or missing fields it will be skipped.
- */
 function initSafaris() {
   for (const path in safariModules) {
     try {
@@ -31,69 +24,52 @@ function initSafaris() {
 
       const safari = mod.default
 
-      // Basic validation
-      if (
-        !safari.id ||
-        !safari.title ||
-        !safari.country ||
-        typeof safari.price !== 'number'
-      ) {
-        console.warn(`⚠️ Invalid safari data skipped: ${path}`)
+      // Required fields validation
+      if (!safari.id || !safari.title || !safari.country || typeof safari.price !== 'number') {
+        console.warn(`⚠️ Invalid safari data skipped (missing required fields): ${path}`)
         continue
       }
 
-      safaris.push(safari)
+      // Ensure arrays always exist so consumers don't need null-checks
+      if (!Array.isArray(safari.gallery)) safari.gallery = []
+      if (!Array.isArray(safari.highlights)) safari.highlights = []
+      if (!Array.isArray(safari.itinerary)) safari.itinerary = []
+      if (!Array.isArray(safari.included)) safari.included = []
+      if (!Array.isArray(safari.notIncluded)) safari.notIncluded = []
+      if (!Array.isArray(safari.accommodation)) safari.accommodation = []
 
+      safaris.push(safari)
     } catch (error) {
       console.warn(`⚠️ Failed to load safari JSON: ${path}`, error)
     }
   }
 
-  // Sort once after loading
+  // Sort by price ascending
   safaris.sort((a, b) => a.price - b.price)
 }
 
-// initialize once
 initSafaris()
 
-/**
- * Return all safaris
- */
 export function loadSafaris(): Safari[] {
   return safaris
 }
 
-/**
- * Get safari by id
- */
 export function getSafariById(id: string): Safari | undefined {
   return safaris.find(s => s.id === id)
 }
 
-/**
- * Filter by country
- */
 export function getSafarisByCountry(country: string): Safari[] {
-  return safaris.filter(s => s.country === country)
+  return safaris.filter(s => s.country.toLowerCase() === country.toLowerCase())
 }
 
-/**
- * Filter by category
- */
 export function getSafarisByCategory(category: string): Safari[] {
   return safaris.filter(s => s.category === category)
 }
 
-/**
- * Get unique countries
- */
 export function getCountries(): string[] {
   return Array.from(new Set(safaris.map(s => s.country))).sort()
 }
 
-/**
- * Get unique categories
- */
 export function getCategories(): string[] {
   return Array.from(new Set(safaris.map(s => s.category))).sort()
 }

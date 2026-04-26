@@ -3,8 +3,8 @@
   "title": "Best of Kenya Safari - South Edition",
   "country": "Kenya",
   "duration": "3 Days / 2 Nights",
-  "price": 3450,
-  "description": "Kenya pioneered the safari experience and remains a country of striking contrasts, from snow-capped mountains to lush tropical forests and golden beaches. This safari showcases Kenya’s remarkable landscapes, cultures and wildlife diversity. Guests experience the iconic Maasai Mara ecosystem combined with luxury accommodation and exclusive flights, offering an unforgettable wildlife experience in one of Africa’s most celebrated safari destinations.",
+  "price": 2700,
+  "description": "Kenya pioneered the safari experience and remains a country of striking contrasts, from snow-capped mountains to lush tropical forests and golden beaches. This safari showcases Kenya's remarkable landscapes, cultures and wildlife diversity. Guests experience the iconic Maasai Mara ecosystem combined with luxury accommodation and exclusive flights, offering an unforgettable wildlife experience in one of Africa's most celebrated safari destinations.",
   "image": "https://zazuventure.com/wp-content/uploads/2020/08/4328101038_5ed584481f.jpg",
   "category": "luxury",
   "experience": "wildlife",
@@ -12,8 +12,82 @@
     "Luxury stay in Nairobi at Villa Rosa Kempinski",
     "Exclusive charter flights to and from the Maasai Mara",
     "Two nights luxury accommodation in the Maasai Mara",
-    "Daily game drives in one of Africa’s richest wildlife reserves",
+    "Daily game drives in one of Africa's richest wildlife reserves",
     "Optional hot air balloon safari over the Mara plains"
+  ],
+  "pricingPeriods": [
+    {
+      "id": "jan-mar",
+      "label": "5 Jan – 31 Mar",
+      "startDate": "2026-01-05",
+      "endDate": "2026-03-31",
+      "pricePerPersonSharing": 2700,
+      "currency": "USD",
+      "minPersons": 2
+    },
+    {
+      "id": "apr-may",
+      "label": "1 Apr – 31 May",
+      "startDate": "2026-04-01",
+      "endDate": "2026-05-31",
+      "pricePerPersonSharing": 2900,
+      "currency": "USD",
+      "minPersons": 2
+    },
+    {
+      "id": "easter",
+      "label": "Easter",
+      "startDate": "2026-04-02",
+      "endDate": "2026-04-06",
+      "pricePerPersonSharing": 3200,
+      "currency": "USD",
+      "minPersons": 2
+    },
+    {
+      "id": "june",
+      "label": "June",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-30",
+      "pricePerPersonSharing": 3000,
+      "currency": "USD",
+      "minPersons": 2
+    },
+    {
+      "id": "jul-sep",
+      "label": "1 Jul – 30 Sep",
+      "startDate": "2026-07-01",
+      "endDate": "2026-09-30",
+      "pricePerPersonSharing": 3750,
+      "currency": "USD",
+      "minPersons": 2
+    },
+    {
+      "id": "october",
+      "label": "October",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31",
+      "pricePerPersonSharing": 3100,
+      "currency": "USD",
+      "minPersons": 2
+    },
+    {
+      "id": "nov-dec",
+      "label": "1 Nov – 21 Dec",
+      "startDate": "2026-11-01",
+      "endDate": "2026-12-21",
+      "pricePerPersonSharing": 2800,
+      "currency": "USD",
+      "minPersons": 2
+    },
+    {
+      "id": "christmas",
+      "label": "22 Dec – 5 Jan 2027",
+      "startDate": "2026-12-22",
+      "endDate": "2027-01-05",
+      "pricePerPersonSharing": 3300,
+      "currency": "USD",
+      "minPersons": 2
+    }
   ],
   "itinerary": [
     {
@@ -55,18 +129,6 @@
     "Telephone calls",
     "Cognac and cigars"
   ],
-  "pricing": {
-    "lowSeason": {
-      "solo": 3450,
-      "twoPersons": 3450,
-      "group": 3450
-    },
-    "highSeason": {
-      "solo": 3750,
-      "twoPersons": 3750,
-      "group": 3750
-    }
-  },
   "accommodation": [
     "Villa Rosa Kempinski - Nairobi (1 night)",
     "Kichwa Tembo Tented Camp - Maasai Mara (2 nights)",

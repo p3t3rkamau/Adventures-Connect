@@ -7,6 +7,9 @@ import { SafariOverview } from '../components/SafariOverview'
 import { SafariTabs } from '../components/SafariTabs'
 import { SafariInclusions } from '../components/SafariInclusions'
 import { SafariBookingSidebar } from '../components/SafariBookingSidebar'
+import { SEOMeta } from '../components/SEOMeta'
+
+const BASE_URL = 'https://www.adventuresconnect.co.ke'
 
 export function SafariDetail() {
   const { id } = useParams<{ id: string }>()
@@ -25,12 +28,45 @@ export function SafariDetail() {
     )
   }
 
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'TouristTrip',
+    name: safari.title,
+    description: safari.description,
+    image: safari.image,
+    touristType: safari.experience,
+    itinerary: {
+      '@type': 'ItemList',
+      numberOfItems: safari.itinerary.length,
+    },
+    offers: {
+      '@type': 'Offer',
+      price: safari.price,
+      priceCurrency: 'USD',
+      availability: 'https://schema.org/InStock',
+      url: `${BASE_URL}/safari/${safari.id}`,
+    },
+    provider: {
+      '@type': 'TravelAgency',
+      name: 'Adventures Connect',
+      url: BASE_URL,
+    },
+  }
+
   return (
     <div className="bg-white">
+      <SEOMeta
+        title={safari.title}
+        description={`${safari.description} | ${safari.duration} | From USD ${safari.price.toLocaleString()} per person sharing.`}
+        image={safari.image}
+        url={`${BASE_URL}/safari/${safari.id}`}
+        schema={schema}
+      />
+
       {/* Hero gallery */}
       <SafariGallery images={safari.gallery} title={safari.title} />
 
-      <div className="max-w-7xl mx-auto px-4 py-12">
+      <div className="max-w-7xl mx-auto px-4 py-10">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Main content */}
           <motion.div
@@ -44,7 +80,7 @@ export function SafariDetail() {
             <SafariInclusions safari={safari} />
           </motion.div>
 
-          {/* Sidebar */}
+          {/* Sticky sidebar */}
           <motion.div
             className="lg:col-span-1"
             initial={{ opacity: 0, x: 20 }}

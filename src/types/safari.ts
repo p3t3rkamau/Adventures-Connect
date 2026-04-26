@@ -1,14 +1,13 @@
 // safari.ts — Central type definition for all safari data
 
-export interface SafariPricingTier {
-  solo: number
-  twoPersons: number
-  group: number
-}
-
-export interface SafariPricing {
-  lowSeason: SafariPricingTier
-  highSeason: SafariPricingTier
+export interface PricingPeriod {
+  id: string
+  label: string          // e.g. "1 Jul – 30 Sep"
+  startDate: string      // ISO date "YYYY-MM-DD"
+  endDate: string
+  pricePerPersonSharing: number
+  currency: 'USD'
+  minPersons: 2
 }
 
 export interface ItineraryDay {
@@ -27,14 +26,16 @@ export interface Safari {
   title: string
   country: string
   duration: string
-  price: number
-  description: string
 
+  /** Lowest price across all periods — used for sorting & "from" display */
+  price: number
+
+  description: string
   image: string
   gallery: string[]
 
-  category: string       // e.g. "luxury", "budget", "mid-range"
-  experience: string     // e.g. "wildlife", "beach", "cultural"
+  category: string        // e.g. "luxury", "midrange", "budget"
+  experience: string      // e.g. "wildlife", "beach", "wildlife & beach"
 
   highlights: string[]
   itinerary: ItineraryDay[]
@@ -42,9 +43,10 @@ export interface Safari {
   included: string[]
   notIncluded: string[]
 
-  pricing: SafariPricing
-  accommodation: string[]
+  /** New date-based pricing periods (preferred) */
+  pricingPeriods?: PricingPeriod[]
 
+  accommodation: string[]
   travelInfo?: TravelInfo
   note?: string
 }
