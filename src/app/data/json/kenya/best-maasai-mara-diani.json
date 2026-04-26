@@ -2,9 +2,9 @@
   "id": "best-maasai-mara-diani",
   "title": "The Best of the Maasai Mara and Diani",
   "country": "Kenya",
-  "duration": "7 Days / 6 Nights",
-  "price": 2470,
-  "description": "Combine Kenya’s iconic Maasai Mara wildlife with the pristine beaches of Diani. Witness the Great Wildebeest Migration (July–October), enjoy guided game drives, and relax on Africa’s finest coastal resorts.",
+  "duration": "8 Days / 7 Nights",
+  "price": 4200,
+  "description": "Combine Kenya's iconic Maasai Mara wildlife with the pristine beaches of Diani. Witness the Great Wildebeest Migration (July–October), enjoy guided game drives, and relax on Africa's finest coastal resorts.",
   "image": "https://cdn.atrsafari.com/cdn/05explore/locations-and-lodges/africa/kenya/mara/triangle/angama-mara/0/stills/00page/01KANG-IM0001-angama-mara-1920.jpg",
   "category": "luxury",
   "experience": "wildlife & beach",
@@ -15,6 +15,80 @@
     "Guided game drives in open-sided Landcruisers",
     "Return airstrip transfers and flights included",
     "Angama Foundation contribution included"
+  ],
+  "pricingPeriods": [
+    {
+      "id": "jan-mar",
+      "label": "5 Jan – 31 Mar",
+      "startDate": "2026-01-05",
+      "endDate": "2026-03-31",
+      "pricePerPersonSharing": 4200,
+      "currency": "USD",
+      "minPersons": 2
+    },
+    {
+      "id": "apr-may",
+      "label": "1 Apr – 31 May",
+      "startDate": "2026-04-01",
+      "endDate": "2026-05-31",
+      "pricePerPersonSharing": 4470,
+      "currency": "USD",
+      "minPersons": 2
+    },
+    {
+      "id": "easter",
+      "label": "Easter",
+      "startDate": "2026-04-02",
+      "endDate": "2026-04-06",
+      "pricePerPersonSharing": 4470,
+      "currency": "USD",
+      "minPersons": 2
+    },
+    {
+      "id": "june",
+      "label": "June",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-30",
+      "pricePerPersonSharing": 4470,
+      "currency": "USD",
+      "minPersons": 2
+    },
+    {
+      "id": "jul-sep",
+      "label": "1 Jul – 30 Sep",
+      "startDate": "2026-07-01",
+      "endDate": "2026-09-30",
+      "pricePerPersonSharing": 6030,
+      "currency": "USD",
+      "minPersons": 2
+    },
+    {
+      "id": "october",
+      "label": "October",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31",
+      "pricePerPersonSharing": 6030,
+      "currency": "USD",
+      "minPersons": 2
+    },
+    {
+      "id": "nov-dec",
+      "label": "1 Nov – 21 Dec",
+      "startDate": "2026-11-01",
+      "endDate": "2026-12-21",
+      "pricePerPersonSharing": 4770,
+      "currency": "USD",
+      "minPersons": 2
+    },
+    {
+      "id": "christmas",
+      "label": "22 Dec – 5 Jan 2027",
+      "startDate": "2026-12-22",
+      "endDate": "2027-01-05",
+      "pricePerPersonSharing": 5500,
+      "currency": "USD",
+      "minPersons": 2
+    }
   ],
   "itinerary": [
     {
@@ -75,18 +149,6 @@
     "Personal expenses such as travel insurance, phone calls, meals/drinks not indicated",
     "Optional activities"
   ],
-  "pricing": {
-    "midSeason": {
-      "1st-Apr-30th-Jun": 4470,
-      "01-nov-20-dec": 4770,
-      "1st-jun-31-oct": 6030
-    },
-    "peakSeason": {
-       "1st-Apr-30th-Jun": 4470,
-      "01-nov-20-dec": 4770,
-      "1st-jun-31-oct": 6030
-    }
-  },
   "accommodation": [
     "Angama Mara Camp – Maasai Mara (3 nights)",
     "Little Governors Camp – Maasai Mara (3 nights)",

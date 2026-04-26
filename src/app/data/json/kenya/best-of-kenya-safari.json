@@ -3,7 +3,7 @@
   "title": "Best of Kenya Safari",
   "country": "Kenya",
   "duration": "13 Days / 12 Nights",
-  "price": 4455,
+  "price": 3515,
   "description": "A comprehensive Kenya safari combining northern wildlife, central parks, Maasai Mara and Diani Beach. Ideal for wildlife enthusiasts who also want a relaxing coastal retreat.",
   "image": "https://www.lakemanyaranationalparks.com/wp-content/uploads/2024/11/Tourist-activities-to-do-in-Samburu-National-Reserve.jpg",
   "category": "luxury",
@@ -14,6 +14,80 @@
     "Big Five spotting and Great Migration (Jul–Oct)",
     "Optional boat rides and coastal excursions in Diani",
     "Accommodation at top lodges and Swahili Beach Resort"
+  ],
+  "pricingPeriods": [
+    {
+      "id": "jan-mar",
+      "label": "5 Jan – 31 Mar",
+      "startDate": "2026-01-05",
+      "endDate": "2026-03-31",
+      "pricePerPersonSharing": 3515,
+      "currency": "USD",
+      "minPersons": 2
+    },
+    {
+      "id": "apr-may",
+      "label": "1 Apr – 31 May",
+      "startDate": "2026-04-01",
+      "endDate": "2026-05-31",
+      "pricePerPersonSharing": 3715,
+      "currency": "USD",
+      "minPersons": 2
+    },
+    {
+      "id": "easter",
+      "label": "Easter",
+      "startDate": "2026-04-02",
+      "endDate": "2026-04-06",
+      "pricePerPersonSharing": 3900,
+      "currency": "USD",
+      "minPersons": 2
+    },
+    {
+      "id": "june",
+      "label": "June",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-30",
+      "pricePerPersonSharing": 3800,
+      "currency": "USD",
+      "minPersons": 2
+    },
+    {
+      "id": "jul-sep",
+      "label": "1 Jul – 30 Sep",
+      "startDate": "2026-07-01",
+      "endDate": "2026-09-30",
+      "pricePerPersonSharing": 4455,
+      "currency": "USD",
+      "minPersons": 2
+    },
+    {
+      "id": "october",
+      "label": "October",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31",
+      "pricePerPersonSharing": 3800,
+      "currency": "USD",
+      "minPersons": 2
+    },
+    {
+      "id": "nov-dec",
+      "label": "1 Nov – 21 Dec",
+      "startDate": "2026-11-01",
+      "endDate": "2026-12-21",
+      "pricePerPersonSharing": 3715,
+      "currency": "USD",
+      "minPersons": 2
+    },
+    {
+      "id": "christmas",
+      "label": "22 Dec – 5 Jan 2027",
+      "startDate": "2026-12-22",
+      "endDate": "2027-01-05",
+      "pricePerPersonSharing": 4200,
+      "currency": "USD",
+      "minPersons": 2
+    }
   ],
   "itinerary": [
     {
@@ -96,11 +170,6 @@
     "Personal expenses (travel insurance, laundry, phone calls, meals/drinks not indicated)",
     "Optional activities not mentioned"
   ],
-  "pricing": {
-    "greenSeason": 3515,
-    "peakSeason": 4455,
-    "shoulderSeason": 3715
-  },
   "accommodation": [
     "Samburu Intrepids Camp (2 nights)",
     "Serena Sweetwaters Tented Camp (2 nights)",

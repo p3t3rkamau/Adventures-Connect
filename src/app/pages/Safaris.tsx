@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'motion/react'
 import { loadSafaris } from '../data/loadSafaris'
 import type { Safari } from '../types/safari'
 import { Clock, DollarSign, ArrowRight, Filter, X, Search } from 'lucide-react'
+import { SEOMeta } from '../components/SEOMeta'
 
 const allSafaris = loadSafaris()
 
@@ -96,6 +97,10 @@ export function Safaris() {
 
   return (
     <div>
+      <SEOMeta
+        title="Safari Packages"
+        description="Browse our full range of East Africa safari packages. Filter by destination, budget, and experience type. Kenya, Tanzania, Uganda, Rwanda, Botswana & more."
+      />
       {/* Hero with search bar embedded */}
       <div className="relative h-[360px] md:h-[440px] bg-gradient-to-r from-[var(--safari-brown-dark)] to-[var(--safari-brown)]">
         <div

@@ -3,7 +3,7 @@
   "title": "Best of Kenya Safari – Central and South Edition",
   "country": "Kenya",
   "duration": "5 Days / 4 Nights",
-  "price": 1890,
+  "price": 1590,
   "description": "Kenya pioneered the safari experience and remains a country of striking contrasts, from snow-capped mountains to lush tropical forests and golden beaches. This safari explores the central highlands, Lake Nakuru, and the Maasai Mara, offering iconic wildlife experiences and opportunities to witness the Great Wildebeest Migration between July and October.",
   "image": "https://africanspicesafaris.com/wp-content/uploads/2020/06/ark-tree-lodge-hotel-1200x720.jpg",
   "category": "luxury",
@@ -14,6 +14,80 @@
     "Game drives in the Maasai Mara",
     "Opportunity to witness the Great Wildebeest Migration (July–October)",
     "Exclusive safari experience in a Landcruiser with a professional guide"
+  ],
+  "pricingPeriods": [
+    {
+      "id": "jan-mar",
+      "label": "5 Jan – 31 Mar",
+      "startDate": "2026-01-05",
+      "endDate": "2026-03-31",
+      "pricePerPersonSharing": 1590,
+      "currency": "USD",
+      "minPersons": 2
+    },
+    {
+      "id": "apr-may",
+      "label": "1 Apr – 31 May",
+      "startDate": "2026-04-01",
+      "endDate": "2026-05-31",
+      "pricePerPersonSharing": 1690,
+      "currency": "USD",
+      "minPersons": 2
+    },
+    {
+      "id": "easter",
+      "label": "Easter",
+      "startDate": "2026-04-02",
+      "endDate": "2026-04-06",
+      "pricePerPersonSharing": 1890,
+      "currency": "USD",
+      "minPersons": 2
+    },
+    {
+      "id": "june",
+      "label": "June",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-30",
+      "pricePerPersonSharing": 1750,
+      "currency": "USD",
+      "minPersons": 2
+    },
+    {
+      "id": "jul-sep",
+      "label": "1 Jul – 30 Sep",
+      "startDate": "2026-07-01",
+      "endDate": "2026-09-30",
+      "pricePerPersonSharing": 2350,
+      "currency": "USD",
+      "minPersons": 2
+    },
+    {
+      "id": "october",
+      "label": "October",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31",
+      "pricePerPersonSharing": 1890,
+      "currency": "USD",
+      "minPersons": 2
+    },
+    {
+      "id": "nov-dec",
+      "label": "1 Nov – 21 Dec",
+      "startDate": "2026-11-01",
+      "endDate": "2026-12-21",
+      "pricePerPersonSharing": 1650,
+      "currency": "USD",
+      "minPersons": 2
+    },
+    {
+      "id": "christmas",
+      "label": "22 Dec – 5 Jan 2027",
+      "startDate": "2026-12-22",
+      "endDate": "2027-01-05",
+      "pricePerPersonSharing": 1980,
+      "currency": "USD",
+      "minPersons": 2
+    }
   ],
   "itinerary": [
     {
@@ -54,18 +128,6 @@
     "Personal expenses such as travel insurance, laundry, phone calls, extra meals/drinks",
     "Optional activities"
   ],
-  "pricing": {
-    "lowSeason": {
-      "solo": 1890,
-      "twoPersons": 1890,
-      "group": 1890
-    },
-    "highSeason": {
-      "solo": 2350,
-      "twoPersons": 2350,
-      "group": 2350
-    }
-  },
   "accommodation": [
     "The Ark – Aberdares (1 night)",
     "Lake Nakuru Sopa Lodge – Lake Nakuru (1 night)",
