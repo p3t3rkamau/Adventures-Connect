@@ -3,7 +3,7 @@ import { useState, useMemo, useRef, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { motion, AnimatePresence } from 'motion/react'
 import { loadSafaris } from '../data/loadSafaris'
-import type { Safari } from '../types/safari'
+import type { Safari } from '../../types/safari'
 import { Clock, DollarSign, ArrowRight, Filter, X, Search } from 'lucide-react'
 import { SEOMeta } from '../components/SEOMeta'
 
