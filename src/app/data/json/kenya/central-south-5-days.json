@@ -1,0 +1,83 @@
+{
+    "id": "central-south-5-days",
+    "title": "Central and South Edition Safari",
+    "country": "Kenya",
+    "duration": "5 Days / 4 Nights",
+    "price": 1890,
+    "description": "A classic safari covering The Ark, Lake Nakuru and Maasai Mara with full board accommodation and extensive game drives.",
+    "image": "https://ik.imagekit.io/6cga8hi9z/JaeTravels/naksx-768x388_NmRZCeuOG.png?updatedAt=1742656069052",
+    "category": "midrange",
+    "experience": "wildlife",
+    "highlights": [
+      "Stay at The Ark in Aberdares",
+      "Lake Nakuru flamingos and rhinos",
+      "Two nights in Maasai Mara",
+      "Unlimited game drives"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Nairobi to The Ark",
+        "description": "Transfer to The Ark for overnight stay and wildlife viewing."
+      },
+      {
+        "day": 2,
+        "title": "The Ark to Lake Nakuru",
+        "description": "Drive to Lake Nakuru and enjoy a game drive."
+      },
+      {
+        "day": 3,
+        "title": "Lake Nakuru to Maasai Mara",
+        "description": "Transfer to Maasai Mara and check in at Olkinyei Camp."
+      },
+      {
+        "day": 4,
+        "title": "Full Day Maasai Mara",
+        "description": "Enjoy unlimited game drives in Maasai Mara."
+      },
+      {
+        "day": 5,
+        "title": "Departure",
+        "description": "Return to Nairobi after breakfast."
+      }
+    ],
+    "included": [
+      "Transport in safari mini van",
+      "Full board accommodation",
+      "Unlimited game drives",
+      "Park fees",
+      "English-speaking guide"
+    ],
+    "notIncluded": [
+      "Tips",
+      "Personal expenses",
+      "Insurance",
+      "Optional activities"
+    ],
+    "pricing": {
+      "midSeason": {
+        "01-Jan-30-Jun": 1890,
+        "01-Nov-21-Dec": 1890,
+        "01-Jul-31-Oct": 2080
+      },
+      "peakSeason": {
+        "01-Jan-30-Jun": 1890,
+        "01-Nov-21-Dec": 1890,
+        "01-Jul-31-Oct": 2080
+      }
+    },
+    "accommodation": [
+      "The Ark – Aberdares (1 night)",
+      "Lake Nakuru Sopa Lodge (1 night)",
+      "Olkinyei Camp – Maasai Mara (2 nights)"
+    ],
+    "gallery": [
+      "https://ik.imagekit.io/6cga8hi9z/JaeTravels/r6-768x512_FnhS4gdOOQ.jpg?updatedAt=1742655724198",
+      "https://ik.imagekit.io/6cga8hi9z/JaeTravels/tt-768x512_noSyzwwOv.png?updatedAt=1742658885114"
+    ],
+    "travelInfo": {
+      "clothes": "Light clothing, warm layers for mornings, sunscreen.",
+      "food": "Full board meals at all lodges."
+    },
+    "note": "Rates are per person depending on season."
+  }

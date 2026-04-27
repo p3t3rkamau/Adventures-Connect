@@ -36,7 +36,7 @@ export function Contact() {
       {/* Hero Section */}
       <div className="relative h-[300px] md:h-[400px] bg-gradient-to-r from-[var(--safari-brown-dark)] to-[var(--safari-brown)]">
         <div className="absolute inset-0 opacity-20" style={{
-          backgroundImage: 'url(https://images.unsplash.com/photo-1669557673726-293309494c20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxrZW55YSUyMHNhZmFyaSUyMGxhbmRzY2FwZXxlbnwxfHx8fDE3NzIzMTQ0MzZ8MA&ixlib=rb-4.1.0&q=80&w=1080)',
+          backgroundImage: 'url(https://ik.imagekit.io/6cga8hi9z/Adventures%20connect/Common%20zebra%202.JPG)',
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}></div>

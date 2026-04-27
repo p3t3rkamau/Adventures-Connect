@@ -1,0 +1,71 @@
+{
+    "id": "maasai-mara-3-days-olkinyei",
+    "title": "3 Days / 2 Nights Maasai Mara Safari",
+    "country": "Kenya",
+    "duration": "3 Days / 2 Nights",
+    "price": 780,
+    "description": "A short Maasai Mara safari staying at Olkinyei Camp with full board accommodation, unlimited game drives and park fees included.",
+    "image": "https://ik.imagekit.io/6cga8hi9z/JaeTravels/mara-crossing-wildebeest-tanzania-wildlife-yellow-zebra-safaris_2N2fdRbt_.jpg?updatedAt=1743180059901",
+    "category": "midrange",
+    "experience": "wildlife",
+    "highlights": [
+      "Stay at Olkinyei Camp",
+      "Unlimited game drives in Maasai Mara",
+      "Big Five wildlife viewing",
+      "Professional English-speaking guide"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Nairobi to Maasai Mara",
+        "description": "Transfer to Maasai Mara and check in at Olkinyei Camp. Afternoon game drive."
+      },
+      {
+        "day": 2,
+        "title": "Full Day Maasai Mara",
+        "description": "Enjoy unlimited game drives across the Maasai Mara."
+      },
+      {
+        "day": 3,
+        "title": "Departure",
+        "description": "Morning game drive followed by breakfast and return to Nairobi."
+      }
+    ],
+    "included": [
+      "Transport in a safari equipped mini van",
+      "2 nights accommodation on full board basis",
+      "Unlimited game drives",
+      "All park fees",
+      "English-speaking guide"
+    ],
+    "notIncluded": [
+      "Tips",
+      "Personal expenses",
+      "Travel insurance",
+      "Optional activities"
+    ],
+    "pricing": {
+      "midSeason": {
+        "03-Jan-14-Jun": 780,
+        "01-Nov-21-Dec": 985,
+        "15-Jun-31-Oct": 1065
+      },
+      "peakSeason": {
+        "03-Jan-14-Jun": 780,
+        "01-Nov-21-Dec": 985,
+        "15-Jun-31-Oct": 1065
+      }
+    },
+    "accommodation": [
+      "Olkinyei Camp – Maasai Mara (2 nights)"
+    ],
+    "gallery": [
+      "https://ik.imagekit.io/6cga8hi9z/JaeTravels/africa-big-5-animals-found-in-uganda_zZfyMJ8hE.webp?updatedAt=1743179867764",
+      "https://ik.imagekit.io/6cga8hi9z/JaeTravels/Cheetah-4-768x512_nMveTpsXE.jpg?updatedAt=1742659973875"
+    ],
+    "travelInfo": {
+      "clothes": "Light safari wear, hat, sunscreen, and a jacket for mornings.",
+      "food": "Full board meals provided at camp."
+    },
+    "note": "Rates are per person and subject to availability."
+  }

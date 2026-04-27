@@ -1,0 +1,95 @@
+{
+    "id": "maasai-mara-diani-7-days",
+    "title": "7 Days Maasai Mara & Diani Safari",
+    "country": "Kenya",
+    "duration": "7 Days / 6 Nights",
+    "price": 4470,
+    "description": "A luxury safari combining Maasai Mara wildlife and Diani beach relaxation with flights included.",
+    "image": "https://ik.imagekit.io/6cga8hi9z/JaeTravels/images__3__c0uxXzPhF.jpeg?updatedAt=1717105043454",
+    "category": "luxury",
+    "experience": "wildlife & beach",
+    "highlights": [
+      "3 nights at Governors Camp Maasai Mara",
+      "3 nights at The Maji Resort Diani",
+      "Flights included",
+      "Unlimited game drives",
+      "Beach relaxation"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Fly to Maasai Mara",
+        "description": "Transfer and game drive."
+      },
+      {
+        "day": 2,
+        "title": "Mara Safari",
+        "description": "Full day game drives."
+      },
+      {
+        "day": 3,
+        "title": "Mara Safari",
+        "description": "Game drives continue."
+      },
+      {
+        "day": 4,
+        "title": "Fly to Diani",
+        "description": "Transfer to beach resort."
+      },
+      {
+        "day": 5,
+        "title": "Diani Beach",
+        "description": "Relaxation."
+      },
+      {
+        "day": 6,
+        "title": "Diani Beach",
+        "description": "Leisure activities."
+      },
+      {
+        "day": 7,
+        "title": "Departure",
+        "description": "Return flight to Nairobi."
+      }
+    ],
+    "included": [
+      "Flights Nairobi–Mara–Diani–Nairobi",
+      "Full board in Maasai Mara",
+      "Half board in Diani",
+      "Game drives",
+      "Park fees",
+      "Airstrip transfers",
+      "Guide services"
+    ],
+    "notIncluded": [
+      "Tips",
+      "Personal expenses",
+      "Insurance",
+      "Optional activities"
+    ],
+    "pricing": {
+      "midSeason": {
+        "01-Apr-30-Jun": 4470,
+        "01-Nov-20-Dec": 4770,
+        "01-Jul-31-Oct": 6030
+      },
+      "peakSeason": {
+        "01-Apr-30-Jun": 4470,
+        "01-Nov-20-Dec": 4770,
+        "01-Jul-31-Oct": 6030
+      }
+    },
+    "accommodation": [
+      "Governors Camp – Maasai Mara (3 nights)",
+      "The Maji Resort – Diani (3 nights)"
+    ],
+    "gallery": [
+      "/images/safaris/mara.jpg",
+      "/images/safaris/diani.jpg"
+    ],
+    "travelInfo": {
+      "clothes": "Safari wear + beachwear + light jacket.",
+      "food": "Full board in Mara, half board in Diani."
+    },
+    "note": "Rates vary by season and availability."
+  }

@@ -114,7 +114,7 @@
     "Two game drives daily",
     "Return airstrip transfers in Maasai Mara",
     "Return airport transfers in Nairobi",
-    "All meals and drinks (excluding French Champagne and reserve wines)",
+    "All meals and drinks excluding French Champagne and reserve wines",
     "Laundry services and WiFi",
     "All on-property guest experiences",
     "Balloon ride over the Mara",
@@ -129,6 +129,11 @@
     "Telephone calls",
     "Cognac and cigars"
   ],
+  "pricing": {
+    "lowSeason": 3450,
+    "midSeason": 3450,
+    "highSeason": 3750
+  },
   "accommodation": [
     "Villa Rosa Kempinski - Nairobi (1 night)",
     "Kichwa Tembo Tented Camp - Maasai Mara (2 nights)",
@@ -145,5 +150,5 @@
     "clothes": "Bring mosquito repellent, sunscreen, a hat and sunglasses. Early mornings and evenings in the Maasai Mara can be cool so a light jacket or sweater is recommended.",
     "food": "Meals are served at luxury camps and lodges offering international standard cuisine with a variety of beverages included except for premium champagne and reserve wines."
   },
-  "note": "Cessna Caravan is a single-engine 12-seater aircraft and the DHC-6 Twin Otter is an 18-seater twin-engine aircraft used for charter flights to the Maasai Mara."
+  "note": "Prices are per person sharing. Solo traveler pricing available on request. Cessna Caravan is a single-engine 12-seater aircraft and the DHC-6 Twin Otter is an 18-seater twin-engine aircraft used for charter flights to the Maasai Mara."
 }

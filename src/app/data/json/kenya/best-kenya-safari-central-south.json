@@ -13,7 +13,7 @@
     "Flamingoes and rhinos at Lake Nakuru",
     "Game drives in the Maasai Mara",
     "Opportunity to witness the Great Wildebeest Migration (July–October)",
-    "Exclusive safari experience in a Landcruiser with a professional guide"
+    "Exclusive safari experience with a professional guide"
   ],
   "pricingPeriods": [
     {
@@ -103,7 +103,7 @@
     {
       "day": 3,
       "title": "Lake Nakuru to Maasai Mara",
-      "description": "Drive to Maasai Mara, arriving at Olkinyei Camp for lunch. Afternoon game drive in Maasai Mara. Enjoy views of wildlife and optional encounters with predators. Overnight at Olkinyei Mara Camp."
+      "description": "Drive to Maasai Mara, arriving at Ol Kinyei Mara Camp for lunch. Afternoon game drive in Maasai Mara."
     },
     {
       "day": 4,
@@ -118,21 +118,25 @@
   ],
   "included": [
     "Accommodation on full board basis in the mentioned lodges",
-    "Exclusive use of the safari-equipped Landcruiser (not shared)",
-    "Professional driver guide and pre-tour briefing",
+    "Transport in a safari-equipped vehicle",
+    "Professional English-speaking driver guide",
     "All park entrance fees and relevant taxes",
     "Unlimited game drives"
   ],
   "notIncluded": [
-    "Tips",
+    "Tips and gratuities",
     "Personal expenses such as travel insurance, laundry, phone calls, extra meals/drinks",
     "Optional activities"
   ],
+  "pricing": {
+    "lowSeason": 1890,
+    "midSeason": 1890,
+    "highSeason": 2350
+  },
   "accommodation": [
     "The Ark – Aberdares (1 night)",
     "Lake Nakuru Sopa Lodge – Lake Nakuru (1 night)",
-    "Mara Elatia Camp – Maasai Mara (1 night)",
-    "Ashnil Mara Camp – Maasai Mara (1 night)"
+    "Ol Kinyei Mara Camp – Maasai Mara (2 nights)"
   ],
   "gallery": [
     "https://cheetahsafaris.com/wp-content/uploads/2024/09/13-the-ark-kenya.webp",
@@ -143,5 +147,5 @@
     "clothes": "Bring mosquito repellent, sunscreen, a hat and sunglasses. Early mornings and evenings can be cool in the highlands, so a sweater or light jacket is recommended.",
     "food": "Most lodges serve buffet-style meals with desserts; some offer set menus. Food is of international standard prepared by professional chefs."
   },
-  "note": "Adventures Connect LTD reserves the right to substitute accommodations with similar facilities in circumstances beyond our control."
+  "note": "Prices are per person sharing. Solo traveler pricing available on request. Adventures Connect LTD reserves the right to substitute accommodations with similar facilities in circumstances beyond our control."
 }

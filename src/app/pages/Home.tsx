@@ -7,8 +7,13 @@ import { loadDestinations } from '../data/loadDestinations'
 import { Award, Users, Headphones, MapPin, Star, Quote, ChevronDown, Shield, Globe, BadgeCheck, Leaf } from 'lucide-react'
 import { StatsBand } from '../components/StatsBand'
 import PopularSafaris from '../components/FeaturedDestination'
-import { SEOMeta } from '../components/SEOMeta'
-
+import {
+  Accordion,
+  AccordionItem,
+  AccordionTrigger,
+  AccordionContent,
+} from '../components/ui/accordion'
+import { ChevronDown } from 'lucide-react';
 const allDestinations = loadDestinations()
 
 const faqs = [
@@ -83,21 +88,21 @@ const testimonials = [
     location: 'United States',
     text: 'Our Masai Mara safari was absolutely incredible! The guides were knowledgeable, the accommodations were perfect, and we saw all the Big Five. Adventures Connect made our dream safari a reality!',
     rating: 5,
-    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop',
+    image: '',
   },
   {
     name: 'Emma Thompson',
     location: 'United Kingdom',
     text: 'The gorilla trekking in Rwanda was a once-in-a-lifetime experience. The entire trip was flawlessly organized, and the team went above and beyond to ensure we had an amazing time.',
     rating: 5,
-    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop',
+    image: '',
   },
   {
     name: 'Hans Weber',
     location: 'Germany',
     text: 'Professional, friendly, and reliable. Our Tanzania safari exceeded all expectations. The Serengeti is even more spectacular in person, and the Ngorongoro Crater was breathtaking!',
     rating: 5,
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop',
+    image: '',
   },
 ]
 
@@ -285,34 +290,48 @@ export function Home() {
         </div>
       </section>
 
-      {/* Stats Band */}
-      <StatsBand />
+      <section>
+              {/* FAQ Section */}
+              <section className="py-20 px-4 bg-[var(--safari-cream)]">
+                <div className="max-w-4xl mx-auto">
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                    className="text-center mb-12"
+                  >
+                    <h2 className="text-3xl md:text-4xl font-bold text-[var(--safari-brown-dark)] mb-4">
+                      Frequently Asked Questions
+                    </h2>
+                    <p className="text-lg text-gray-600">
+                      Find answers to common questions about safari travel
+                    </p>
+                  </motion.div>
+        
+                  <Accordion type="single" collapsible className="space-y-4">
+                    {faqs.map((faq, index) => (
+                      <AccordionItem
+                        key={index}
+                        value={`item-${index}`}
+                        className="bg-white rounded-lg overflow-hidden shadow-md"
+                      >
+                        <AccordionTrigger className="px-6 py-4 text-left font-semibold text-[var(--safari-brown-dark)]">
+                          {faq.question}
+                        </AccordionTrigger>
 
-      {/* FAQ */}
-      <section className="py-16 px-4 bg-[var(--safari-cream)]">
-        <div className="max-w-3xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-10"
-          >
-            <p className="text-sm uppercase tracking-widest text-[var(--safari-gold)] font-semibold mb-2">Got Questions?</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[var(--safari-brown-dark)] mb-3">
-              Frequently Asked Questions
-            </h2>
-            <p className="text-gray-600">
-              Everything you need to know before booking your safari
-            </p>
-          </motion.div>
+                        <AccordionContent className="px-6 py-4 text-gray-600">
+                          {faq.answer}
+                        </AccordionContent>
+                      </AccordionItem>
+                    ))}
+                  </Accordion>
+                </div>
+              </section>
+      </section>
 
-          <div className="space-y-3">
-            {faqs.map((faq, index) => (
-              <FaqItem key={index} faq={faq} index={index} />
-            ))}
-          </div>
-        </div>
+      <section>
+        <StatsBand />
       </section>
 
       {/* Testimonials */}

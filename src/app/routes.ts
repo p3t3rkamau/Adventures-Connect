@@ -8,6 +8,7 @@ import { Safaris } from './pages/Safaris';
 import { SafariDetail } from './pages/SafariDetail';
 import { Gallery } from './pages/Gallery';
 import { Contact } from './pages/Contact';
+ 
 
 export const router = createBrowserRouter([
   {

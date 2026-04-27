@@ -5,7 +5,7 @@
   "duration": "15 Days / 14 Nights",
   "price": 4800,
   "description": "This extensive safari explores northern and southern Kenya, from Ol Pejeta and Samburu to the Aberdares, Lake Naivasha, Maasai Mara, Amboseli, and finally the Kenyan coast. Guests experience iconic wildlife, cultural visits, and optional excursions, including the Great Wildebeest Migration between July and October.",
-  "image": "https://jewelsafaris.com/wp-content/uploads/2019/09/Ol-Pejeta-Chimpanzee-Sanctuary-1.jpg",
+  "image": "https://ik.imagekit.io/6cga8hi9z/Adventures%20connect/African%20Spoonbill%204.JPG?updatedAt=1777255087510",
   "category": "luxury",
   "experience": "wildlife",
   "highlights": [
@@ -185,6 +185,11 @@
     "Personal expenses (laundry, phone calls, extra meals/drinks)",
     "Optional activities not mentioned"
   ],
+  "pricing": {
+    "lowSeason": 5470,
+    "midSeason": 5790,
+    "highSeason": 6230
+  },
   "accommodation": [
     "Tamarind Tree Hotel – Nairobi (1 night)",
     "Serena Sweetwaters Tented Camp – Ol Pejeta (1 night)",
@@ -197,8 +202,8 @@
     "Swahili Beach Resort – Mombasa (3 nights)"
   ],
   "gallery": [
-    "/images/safaris/tamarind-tree.jpg",
-    "/images/safaris/ol-pejeta.jpg",
+    "https://ik.imagekit.io/6cga8hi9z/Adventures%20connect/Sunset%20at%20lake%20elementaita.JPG?updatedAt=1777255100569",
+    "https://ik.imagekit.io/6cga8hi9z/JaeTravels/GoldenMonkey-768x512_Vg7byYBGK.jpg?updatedAt=1716985587779",
     "/images/safaris/samburu.jpg",
     "/images/safaris/the-ark.jpg",
     "/images/safaris/lake-naivasha.jpg",

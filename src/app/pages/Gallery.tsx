@@ -5,75 +5,75 @@ import { X } from 'lucide-react';
 
 const galleryImages = [
   {
-    url: 'https://images.unsplash.com/photo-1724581777107-c132d05753a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXNhaSUyMG1hcmElMjB3aWxkbGlmZSUyMHNhZmFyaXxlbnwxfHx8fDE3NzIzNTAwOTV8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    url: 'https://ik.imagekit.io/6cga8hi9z/Adventures%20connect/Alamaya%20of%20the%20KF9%20pride%20-%20NNP.JPG',
     category: 'wildlife',
     title: 'Masai Mara Wildlife'
   },
   {
-    url: 'https://images.unsplash.com/photo-1729796914745-6656569db42a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsaW9uJTIwYWZyaWNhJTIwd2lsZGxpZmV8ZW58MXx8fHwxNzcyMzUwMDk5fDA&ixlib=rb-4.1.0&q=80&w=1080',
+    url: 'https://ik.imagekit.io/6cga8hi9z/Adventures%20connect/Baby%20Elephant%20at%20Dalphine%20Sheldricks%20(2).JPG',
     category: 'wildlife',
     title: 'African Lion'
   },
   {
-    url: 'https://images.unsplash.com/photo-1560440293-855922f9cc7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzZXJlbmdldGklMjBzdW5zZXQlMjBhZnJpY2F8ZW58MXx8fHwxNzcyMzUwMDk1fDA&ixlib=rb-4.1.0&q=80&w=1080',
+    url: 'https://ik.imagekit.io/6cga8hi9z/Adventures%20connect/Black%20Winged%20Stilt%20(2).JPG',
     category: 'landscapes',
     title: 'Serengeti Sunset'
   },
   {
-    url: 'https://images.unsplash.com/photo-1535759802691-bf5a6cfe6ce9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIwZWxlcGhhbnQlMjBzYWZhcml8ZW58MXx8fHwxNzcyMjM1MjU0fDA&ixlib=rb-4.1.0&q=80&w=1080',
+    url: 'https://ik.imagekit.io/6cga8hi9z/Adventures%20connect/Burchells%20or%20Common%20zebra.JPG',
     category: 'wildlife',
     title: 'African Elephant'
   },
   {
-    url: 'https://images.unsplash.com/photo-1552635408-80ae6cd8edeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx6ZWJyYSUyMHNhZmFyaSUyMGFmcmljYXxlbnwxfHx8fDE3NzIzNTAwOTl8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    url: 'https://ik.imagekit.io/6cga8hi9z/Adventures%20connect/Common%20Sandpiper.JPG',
     category: 'wildlife',
     title: 'Zebra Safari'
   },
   {
-    url: 'https://images.unsplash.com/photo-1645264206324-8146a951ef57?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnaXJhZmZlJTIwc3Vuc2V0JTIwYWZyaWNhfGVufDF8fHx8MTc3MjM1MDA5OXww&ixlib=rb-4.1.0&q=80&w=1080',
+    url: 'https://ik.imagekit.io/6cga8hi9z/Adventures%20connect/Egyptian%20gesse%201.JPG',
     category: 'wildlife',
     title: 'Giraffe at Sunset'
   },
   {
-    url: 'https://images.unsplash.com/photo-1669557673726-293309494c20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxrZW55YSUyMHNhZmFyaSUyMGxhbmRzY2FwZXxlbnwxfHx8fDE3NzIzMTQ0MzZ8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    url: 'https://ik.imagekit.io/6cga8hi9z/Adventures%20connect/Eland.JPG',
     category: 'landscapes',
     title: 'Kenya Landscape'
   },
   {
-    url: 'https://images.unsplash.com/photo-1738508041350-03453c14811c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzYWZhcmklMjBqZWVwJTIwYWZyaWNhfGVufDF8fHx8MTc3MjM1MDA5OXww&ixlib=rb-4.1.0&q=80&w=1080',
+    url: 'https://ik.imagekit.io/6cga8hi9z/Adventures%20connect/Female%20Ostrich.JPG',
     category: 'tourists',
     title: 'Safari Experience'
   },
   {
-    url: 'https://images.unsplash.com/photo-1667550507974-cc647990b75a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0YW56YW5pYSUyMHdpbGRsaWZlfGVufDF8fHx8MTc3MjM1MDA5N3ww&ixlib=rb-4.1.0&q=80&w=1080',
+    url: 'https://ik.imagekit.io/6cga8hi9z/Adventures%20connect/Kemboi%20at%20NNP%203.JPG',
     category: 'wildlife',
     title: 'Tanzania Wildlife'
   },
   {
-    url: 'https://images.unsplash.com/photo-1667504319000-8133f9021cf8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb3VudGFpbiUyMGdvcmlsbGElMjByd2FuZGF8ZW58MXx8fHwxNzcyMzUwMDk2fDA&ixlib=rb-4.1.0&q=80&w=1080',
+    url: 'https://ik.imagekit.io/6cga8hi9z/Adventures%20connect/Yellow%20Necked%20Spurfowl%202.JPG',
+    category: 'Birds',
+    title: 'Yellow Necked Spurfowl'
+  },
+  {
+    url: 'https://ik.imagekit.io/6cga8hi9z/Adventures%20connect/Kemboi%20at%20NNP%203.JPG',
+    category: 'landscapes',
+    title: 'Lake Elementaita'
+  },
+  {
+    url: 'https://ik.imagekit.io/6cga8hi9z/Adventures%20connect/Male%20Impala.JPG',
     category: 'wildlife',
-    title: 'Mountain Gorilla'
+    title: 'Male Impala'
   },
   {
-    url: 'https://images.unsplash.com/photo-1682773083915-5375145f99e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyd2FuZGElMjBtb3VudGFpbiUyMGxhbmRzY2FwZXxlbnwxfHx8fDE3NzIzNTAwOTd8MA&ixlib=rb-4.1.0&q=80&w=1080',
-    category: 'landscapes',
-    title: 'Rwanda Mountains'
+    url: 'https://ik.imagekit.io/6cga8hi9z/Adventures%20connect/Male%20White%20Rhino1.JPG',
+    category: 'wildlife',
+    title: 'Male White Rhino'
   },
   {
-    url: 'https://images.unsplash.com/photo-1671830018944-eb7622e8b8f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtdXJjaGlzb24lMjBmYWxscyUyMHVnYW5kYXxlbnwxfHx8fDE3NzIzNTAwOTZ8MA&ixlib=rb-4.1.0&q=80&w=1080',
-    category: 'landscapes',
-    title: 'Murchison Falls'
+    url: 'https://ik.imagekit.io/6cga8hi9z/Adventures%20connect/Giraffe%205.JPG',
+    category: 'wildlife',
+    title: 'Giraffe'
   },
-  {
-    url: 'https://images.unsplash.com/photo-1657658153344-3fa560150950?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1Z2FuZGElMjBzYWZhcmklMjBuYXR1cmV8ZW58MXx8fHwxNzcyMzUwMDk3fDA&ixlib=rb-4.1.0&q=80&w=1080',
-    category: 'landscapes',
-    title: 'Uganda Nature'
-  },
-  {
-    url: 'https://images.unsplash.com/photo-1667550469774-295fd6849afa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXNhaSUyMHBlb3BsZSUyMGN1bHR1cmV8ZW58MXx8fHwxNzcyMzUwMTAwfDA&ixlib=rb-4.1.0&q=80&w=1080',
-    category: 'cultural',
-    title: 'Masai Culture'
-  }
 ];
 
 export function Gallery() {
@@ -85,7 +85,8 @@ export function Gallery() {
     { id: 'wildlife', name: 'Wildlife' },
     { id: 'landscapes', name: 'Landscapes' },
     { id: 'tourists', name: 'Safari Experience' },
-    { id: 'cultural', name: 'Cultural Visits' }
+    { id: 'cultural', name: 'Cultural Visits' },
+    { id: 'birds', name: 'Birds' }
   ];
 
   const filteredImages = selectedCategory === 'all' 
@@ -97,8 +98,7 @@ export function Gallery() {
       {/* Hero Section */}
       <div className="relative h-[300px] md:h-[400px] bg-gradient-to-r from-[var(--safari-brown-dark)] to-[var(--safari-brown)]">
         <div className="absolute inset-0 opacity-20" style={{
-          backgroundImage: 'url(https://images.unsplash.com/photo-1645264206324-8146a951ef57?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnaXJhZmZlJTIwc3Vuc2V0JTIwYWZyaWNhfGVufDF8fHx8MTc3MjM1MDA5OXww&ixlib=rb-4.1.0&q=80&w=1080)',
-          backgroundSize: 'cover',
+          backgroundImage: 'url(https://ik.imagekit.io/6cga8hi9z/Adventures%20connect/Male%20White%20Rhino1.JPG)',
           backgroundPosition: 'center'
         }}></div>
         

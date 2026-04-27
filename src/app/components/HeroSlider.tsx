@@ -5,28 +5,88 @@ import { Link } from 'react-router-dom';
 
 const slides = [
   {
-    image: 'https://images.unsplash.com/photo-1724581777107-c132d05753a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXNhaSUyMG1hcmElMjB3aWxkbGlmZSUyMHNhZmFyaXxlbnwxfHx8fDE3NzIzNTAwOTV8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    image: 'https://ik.imagekit.io/6cga8hi9z/Adventures%20connect/Alamaya%20of%20the%20KF9%20pride%20-%20NNP.JPG',
     title: 'Discover the Wild Masai Mara',
     tagline: 'Witness the greatest wildlife spectacle on Earth',
     destination: 'kenya'
   },
   {
-    image: 'https://images.unsplash.com/photo-1560440293-855922f9cc7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzZXJlbmdldGklMjBzdW5zZXQlMjBhZnJpY2F8ZW58MXx8fHwxNzcyMzUwMDk1fDA&ixlib=rb-4.1.0&q=80&w=1080',
+    image: 'https://ik.imagekit.io/6cga8hi9z/Adventures%20connect/Baby%20Elephant%20at%20Dalphine%20Sheldricks%20(2).JPG',
     title: 'Serengeti Sunset Safari',
     tagline: 'Experience the endless plains of Tanzania',
     destination: 'tanzania'
   },
   {
-    image: 'https://images.unsplash.com/photo-1667504319000-8133f9021cf8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb3VudGFpbiUyMGdvcmlsbGElMjByd2FuZGF8ZW58MXx8fHwxNzcyMzUwMDk2fDA&ixlib=rb-4.1.0&q=80&w=1080',
+    image: 'https://ik.imagekit.io/6cga8hi9z/Adventures%20connect/Black%20Winged%20Stilt%20(2).JPG',
     title: 'Rwanda Gorilla Trekking',
     tagline: 'An unforgettable encounter with mountain gorillas',
     destination: 'rwanda'
   },
   {
-    image: 'https://images.unsplash.com/photo-1671830018944-eb7622e8b8f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtdXJjaGlzb24lMjBmYWxscyUyMHVnYW5kYXxlbnwxfHx8fDE3NzIzNTAwOTZ8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    image: 'https://ik.imagekit.io/6cga8hi9z/Adventures%20connect/Burchells%20or%20Common%20zebra.JPG',
     title: 'Murchison Falls Uganda',
     tagline: 'Explore the Pearl of Africa\'s natural wonders',
     destination: 'uganda'
+  },
+  {
+    image: 'https://ik.imagekit.io/6cga8hi9z/Adventures%20connect/Common%20Sandpiper.JPG',
+    title: 'Zanzibar Beach Escape',
+    tagline: 'Relax on white sands and turquoise waters',
+    destination: 'tanzania'
+  },
+  {
+    image: 'https://ik.imagekit.io/6cga8hi9z/Adventures%20connect/Egyptian%20gesse%201.JPG',
+    title: 'Amboseli Elephant Paradise',
+    tagline: 'Giant tuskers beneath Mount Kilimanjaro',
+    destination: 'kenya'
+  },
+  {
+    image: 'https://ik.imagekit.io/6cga8hi9z/Adventures%20connect/Eland.JPG',
+    title: 'Kruger Big Five Safari',
+    tagline: 'Track Africa’s iconic wildlife up close',
+    destination: 'south-africa'
+  },
+  {
+    image: 'https://ik.imagekit.io/6cga8hi9z/Adventures%20connect/Female%20Ostrich.JPG',
+    title: 'Victoria Falls Adventure',
+    tagline: 'Feel the power of the world’s greatest waterfall',
+    destination: 'zimbabwe'
+  },
+  {
+    image: 'https://ik.imagekit.io/6cga8hi9z/Adventures%20connect/Sunset%20at%20lake%20elementaita.JPG',
+    title: 'Okavango Delta Explorer',
+    tagline: 'A water safari through Botswana’s wild heart',
+    destination: 'botswana'
+  },
+  {
+    image: 'https://ik.imagekit.io/6cga8hi9z/Adventures%20connect/African%20Spoonbill%204.JPG',
+    title: 'Namibia Desert Dunes',
+    tagline: 'Discover the surreal beauty of Sossusvlei',
+    destination: 'namibia'
+  },
+  {
+    image: 'https://ik.imagekit.io/6cga8hi9z/Adventures%20connect/Giraffe%205.JPG',
+    title: 'Lake Nakuru Flamingo Haven',
+    tagline: 'A pink spectacle of birds and rhinos',
+    destination: 'kenya'
+  },
+  {
+    image: 'https://ik.imagekit.io/6cga8hi9z/Adventures%20connect/African%20Spoonbill%204.JPG',
+    title: 'Uganda Gorilla Experience',
+    tagline: 'Step into the jungle and meet gentle giants',
+    destination: 'uganda'
+  },
+  {
+    image: 'https://ik.imagekit.io/6cga8hi9z/Adventures%20connect/Male%20Impala.JPG',
+    title: 'Cape Town Coastal Escape',
+    tagline: 'Mountains, oceans, and vibrant city life',
+    destination: 'south-africa'
+  },
+  {
+    image: 'https://ik.imagekit.io/6cga8hi9z/Adventures%20connect/Maasai%20Giraffe%201.JPG',
+    title: 'Great Migration Safari',
+    tagline: 'Witness millions of wildebeest on the move',
+    destination: 'kenya'
   }
 ];
 

@@ -17,7 +17,7 @@ export function Destinations() {
           className="absolute inset-0 opacity-20"
           style={{
             backgroundImage:
-              'url(https://images.unsplash.com/photo-1669557673726-293309494c20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080)',
+              'url(https://ik.imagekit.io/6cga8hi9z/Adventures%20connect/Superb%20Starling%202.JPG)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}

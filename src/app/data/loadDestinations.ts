@@ -23,15 +23,26 @@ export function loadDestinations(): Destination[] {
 
   for (const path in destinationModules) {
     const mod = destinationModules[path]
-    if (mod?.default) {
-      destinations.push(mod.default)
+    const destination = mod?.default
+
+    if (!destination) continue
+
+    if (
+      typeof destination.name !== 'string' ||
+      typeof destination.country !== 'string' ||
+      typeof destination.description !== 'string' ||
+      !Array.isArray(destination.highlights) ||
+      !destination.highlights.every(item => typeof item === 'string')
+    ) {
+      console.error('Invalid destination JSON:', path, destination)
+      continue
     }
+
+    destinations.push(destination)
   }
 
-  // Sort alphabetically by name for consistent ordering
   return destinations.sort((a, b) => a.name.localeCompare(b.name))
 }
-
 export function getDestinationById(id: string): Destination | undefined {
   return loadDestinations().find(d => d.id === id)
 }

@@ -107,7 +107,7 @@ export function Safaris() {
           className="absolute inset-0 opacity-20"
           style={{
             backgroundImage:
-              'url(https://images.unsplash.com/photo-1738508041350-03453c14811c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080)',
+              'url(https://ik.imagekit.io/6cga8hi9z/Adventures%20connect/Burchells%20or%20Common%20zebra.JPG)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
