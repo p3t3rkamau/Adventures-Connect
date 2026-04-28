@@ -13,7 +13,8 @@ import {
   AccordionTrigger,
   AccordionContent,
 } from '../components/ui/accordion'
-import { ChevronDown } from 'lucide-react';
+import { SEOMeta } from '../components/SEOMeta'
+
 const allDestinations = loadDestinations()
 
 const faqs = [
