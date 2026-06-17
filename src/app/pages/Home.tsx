@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { HeroSlider } from '../components/HeroSlider'
 import { motion, AnimatePresence } from 'motion/react'
 import { loadDestinations } from '../data/loadDestinations'
-import { Award, Users, Headphones, MapPin, Star, Quote, ChevronDown, Shield, Globe, BadgeCheck, Leaf } from 'lucide-react'
+import { Award, Users, Headphones, MapPin, Star, Quote, Shield, Globe, BadgeCheck, Leaf, ChevronDown } from 'lucide-react'
 import { StatsBand } from '../components/StatsBand'
 import PopularSafaris from '../components/FeaturedDestination'
 import {

@@ -46,7 +46,7 @@ export function Navigation() {
               
               <div className="ml-0">
                 <div className="">
-                   <img src={logo} alt="Adventures Connect" className="h-20 w-auto" />
+                   <img src={logo} alt="Adventures Connect" className="h-25 w-auto" />
                 </div>
              
               </div>
