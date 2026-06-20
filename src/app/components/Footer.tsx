@@ -1,6 +1,25 @@
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Facebook, Instagram, Send } from 'lucide-react';
 import { logo }  from '../assets/img/exports';
+
+const socialLinks = [
+  {
+    name: 'Facebook',
+    url: 'https://www.facebook.com/Adventuresconnect/',
+    icon: Facebook,
+  },
+  {
+    name: 'Instagram',
+    url: 'https://www.instagram.com/adventuresconnect.ke/',
+    icon: Instagram,
+  },
+  {
+    name: 'TikTok',
+    url: 'https://www.tiktok.com/@adventuresconnectlimited',
+    icon: null, // Custom SVG for TikTok
+  },
+];
+
 export function Footer() {
   return (
     <footer className="bg-[var(--safari-brown-dark)] text-white">
@@ -21,17 +40,35 @@ export function Footer() {
               Your trusted partner for unforgettable East African safari experiences.
             </p>
             <div className="flex gap-4">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--safari-gold)] transition-colors">
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--safari-gold)] transition-colors">
-                <Instagram className="w-5 h-5" />
-              </a>
-              <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--safari-gold)] transition-colors">
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/>
-                </svg>
-              </a>
+              {socialLinks.map((social) => {
+                if (social.name === 'TikTok') {
+                  return (
+                    <a 
+                      key={social.name}
+                      href={social.url} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="hover:text-[var(--safari-gold)] transition-colors"
+                    >
+                      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/>
+                      </svg>
+                    </a>
+                  );
+                }
+                const IconComponent = social.icon;
+                return (
+                  <a 
+                    key={social.name}
+                    href={social.url} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="hover:text-[var(--safari-gold)] transition-colors"
+                  >
+                    <IconComponent className="w-5 h-5" />
+                  </a>
+                );
+              })}
             </div>
           </div>
 
@@ -56,6 +93,16 @@ export function Footer() {
               <li><Link to="/destinations/rwanda" className="hover:text-[var(--safari-gold)] transition-colors">🇷🇼 Rwanda Gorilla Trekking</Link></li>
               <li><Link to="/destinations/uganda" className="hover:text-[var(--safari-gold)] transition-colors">🇺🇬 Uganda Adventures</Link></li>
               <li><Link to="/destinations/south-africa" className="hover:text-[var(--safari-gold)] transition-colors">🇿🇦 South Africa Safaris</Link></li>
+              <li>
+                <a 
+                  href="https://adventuresconnect.yellowpageskenya.com/#services" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-[var(--safari-gold)] transition-colors inline-flex items-center gap-1"
+                >
+                  📖 Yellow Pages
+                </a>
+              </li>
             </ul>
           </div>
 

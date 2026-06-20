@@ -68,12 +68,36 @@ const features = [
 ]
 
 const categories = [
-  { label: 'Wildlife Safaris', emoji: '🦁', color: 'from-amber-700 to-amber-900', href: '/safaris?experience=wildlife' },
-  { label: 'Beach Holidays', emoji: '🏖️', color: 'from-sky-500 to-blue-700', href: '/safaris?experience=beach' },
-  { label: 'Honeymoon', emoji: '💑', color: 'from-rose-500 to-pink-700', href: '/safaris?experience=honeymoon' },
-  { label: 'Luxury Safaris', emoji: '✨', color: 'from-yellow-600 to-amber-800', href: '/safaris?category=luxury' },
-  { label: 'Family Safaris', emoji: '👨‍👩‍👧‍👦', color: 'from-green-600 to-emerald-800', href: '/safaris?experience=family' },
-  { label: 'Adventure Tours', emoji: '🧭', color: 'from-orange-600 to-red-700', href: '/safaris?experience=adventure' },
+  { 
+    label: 'Wildlife Safaris', 
+    image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/d3/e4/7d/wildlife-kenya-safaris.jpg?w=1200&h=-1&s=1', 
+    href: '/safaris?experience=wildlife' 
+  },
+  { 
+    label: 'Beach Holidays', 
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGJFvABJe84RDZNwlUr267BvTHg-FEqPz9Gw&s', 
+    href: '/safaris?experience=beach' 
+  },
+  { 
+    label: 'Honeymoon', 
+    image: 'https://www.offthebeatenpathsafaris.com/wp-content/uploads/2024/07/honeymoon.jpg', 
+    href: '/safaris?experience=honeymoon' 
+  },
+  { 
+    label: 'Luxury Safaris', 
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYnufEaz2VHE--PRQbrGEaI2l6y1Fy-Yv7ew&s', 
+    href: '/safaris?category=luxury' 
+  },
+  { 
+    label: 'Family Safaris', 
+    image: 'https://www.go2africa.com/wp-content/uploads/2024/09/Rekero-Camp-Family-Safari.jpg', 
+    href: '/safaris?experience=family' 
+  },
+  { 
+    label: 'Adventure Tours', 
+    image: 'https://images.ctfassets.net/xt1eyv33iu7n/1PCUd9AsGSwXKzmZ8tX5vH/7a90b7dafa81a8f5fb1959e12e8a0c75/kenya-header.webp', 
+    href: '/safaris?experience=adventure' 
+  },
 ]
 
 const trustItems = [
@@ -209,8 +233,12 @@ export function Home() {
                   to={cat.href}
                   className="group flex flex-col items-center gap-3 text-center"
                 >
-                  <div className={`w-20 h-20 rounded-full bg-gradient-to-br ${cat.color} flex items-center justify-center text-3xl shadow-md group-hover:shadow-xl group-hover:scale-110 transition-all duration-300`}>
-                    {cat.emoji}
+                  <div className="w-20 h-20 rounded-full overflow-hidden shadow-md group-hover:shadow-xl group-hover:scale-110 transition-all duration-300">
+                    <img 
+                      src={cat.image} 
+                      alt={cat.label}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <span className="text-sm font-semibold text-[var(--safari-brown-dark)] group-hover:text-[var(--safari-gold)] transition-colors leading-tight w-20">
                     {cat.label}
